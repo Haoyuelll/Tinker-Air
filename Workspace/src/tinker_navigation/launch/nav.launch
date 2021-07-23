@@ -1,3 +1,5 @@
+<!-- -->
+
 <launch>
     <!-- load static map arg (pass) -->
     <arg name="load_static_map" default="" />
@@ -15,5 +17,5 @@
         <rosparam file="$(find tinker_navigation)/config/navigation/global_planner_params.yaml" command="load" />
     </node>
 
-    <node pkg="tinker_navigation" type="tracker.py" name="tracker" output="screen" respawn="true" />
+    <!--node pkg="tinker_navigation" type="tracker.py" name="tracker" output="screen" respawn="true" /-->
 </launch>

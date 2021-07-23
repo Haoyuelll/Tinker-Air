@@ -1,3 +1,7 @@
+<!--
+  Pasteright 2021 Tinker@Hazel
+-->
+
 <launch>
     <!-- static map -->
     <arg name="load_static_map" default="" />
@@ -6,40 +10,27 @@
     <arg if="$(eval load_static_map != '')" name="cartographer_arguments" value="-load_state_filename $(find tinker_navigation)/static_maps/$(arg load_static_map)/map.pbstream" />
     <arg if="$(eval load_static_map == '')" name="cartographer_arguments" value="" />
 
-    <!-- load static map locations -->
-    <group if="$(eval load_static_map != '')">
-        <include file="$(find tinker_navigation)/static_maps/$(arg load_static_map)/locations.launch" />
-    </group>
-
     <!-- lidars -->
-    <node name="urg_front" pkg="urg_node" type="urg_node" output="screen" respawn="true" >
-        <param name="serial_port" type="str" value="/dev/hokuyo_front"/>
+    <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
+    <param name="robot_description"
+      textfile="$(find tinker_navigation)/config/slam/single_rplidar.urdf" />
 
-        <remap from="/scan" to="/urg_scan_front" />
-        <param name="frame_id" type="str" value="urg_laser_front" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher"
+      type="robot_state_publisher" />
 
-        <!-- UTM-30LX parameters (No Intensity Mode) -->
-        <!-- http://wiki.ros.org/urg_node -->
-        <param name="cluster" value="1" />
-        <param name="skip" value="1" />
-        <param name="publish_intensity" value="false" />
-        <!-- Only use front face 180 deg (not occuluded) -->
-        <param name="angle_min" value="-1.5707963" />
-        <param name="angle_max" value="1.5707963" />
-    </node>
 
     <!-- cartographer -->
     <!-- ref: https://readthedocs.org/projects/google-cartographer-ros/downloads/pdf/latest/ -->
+
     <node name="cartographer_node" pkg="cartographer_ros"
-        type="cartographer_node" args="
-            -configuration_directory $(find tinker_navigation)/config/slam
-            -configuration_basename backpack_2d.lua
-            $(arg cartographer_arguments)"
-        output="screen" respawn="true">
-        <remap from="/scan" to="/urg_scan_front" />
-    </node>
+      type="cartographer_node" args="
+          -configuration_directory $(find tinker_navigation)/config/slam
+          -configuration_basename single_rplidar.lua
+          $(arg cartographer_arguments)"
+      output="screen" respawn="true" />
 
     <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
-        type="cartographer_occupancy_grid_node" args="-resolution 0.05"
+        type="cartographer_occupancy_grid_node" args="-resolution 0.02"
         output="screen" respawn="true"/>
+        
 </launch>

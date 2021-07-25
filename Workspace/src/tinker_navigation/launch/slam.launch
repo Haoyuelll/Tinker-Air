@@ -11,9 +11,14 @@
     <arg if="$(eval load_static_map == '')" name="cartographer_arguments" value="" />
 
     <!-- lidars -->
-    <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
-    <param name="robot_description"
-      textfile="$(find tinker_navigation)/config/slam/single_rplidar.urdf" />
+    <!--<node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
+        <param name="serial_port" type="string" value="/dev/ttyUSB0"/>
+        <param name="serial_baudrate" type="int" value="115200"/>
+        <param name="frame_id" type="string" value="laser"/>
+        <param name="inverted" type="bool" value="false"/>
+        <param name="angle_compensate" type="bool" value="true"/>
+    </node>-->
+     <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
 
     <node name="robot_state_publisher" pkg="robot_state_publisher"
       type="robot_state_publisher" />

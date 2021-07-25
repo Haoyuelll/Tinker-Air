@@ -12,7 +12,7 @@
         <visual>
             <origin xyz="${stl_trans_xyz}" rpy="${stl_rotate_rpy}" />
             <geometry>
-                <mesh filename="package://tinker_description/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
+                <mesh filename="package://tinker_description_nav_only/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
             </geometry>
             <material name="">
                 <color rgba="0.6 0.6 0.6 1" />
@@ -21,18 +21,18 @@
         <collision>
             <origin xyz="${stl_trans_xyz}" rpy="${stl_rotate_rpy}" />
             <geometry>
-                <mesh filename="package://tinker_description/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
+                <mesh filename="package://tinker_description_nav_only/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
             </geometry>
         </collision>
     </link>
 
     <!-- laser -->
-    <xacro:property name="urg_front_trans_xyz" value="0.25 0. 0.25" />
+    <xacro:property name="laser_trans_xyz" value="0.25 0. 0.25" />
 
-    <link name="urg_laser_front" />
-    <joint name="base_to_urg_front" type="fixed">
+    <link name="laser" />
+    <joint name="base_to_laser" type="fixed">
         <parent link="base_link" />
-        <child link="urg_laser_front" />
-        <origin xyz="${urg_front_trans_xyz}" />
+        <child link="laser" />
+        <origin xyz="${laser_trans_xyz}" />
     </joint>
 </robot>

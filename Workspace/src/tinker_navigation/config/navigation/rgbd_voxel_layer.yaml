@@ -7,17 +7,14 @@ transform_tolerance: 0.5
 
 obstacle_layer:
  enabled: true
- max_obstacle_height: 1.3
  obstacle_range: 3.0
  raytrace_range: 4.0
  inflation_radius: 0.5
  track_unknown_space: true
  combination_method: 1
 
- observation_sources: laser_scan_sensor point_cloud2_sensor
- laser_scan_sensor: {data_type: LaserScan, topic: scan, marking: true, clearing: true}
+ observation_sources: point_cloud2_sensor
  point_cloud2_sensor: {data_type: PointCloud2, topic: point_cloud2, marking: true, clearing: true}
-
 
 inflation_layer:
   enabled:              true

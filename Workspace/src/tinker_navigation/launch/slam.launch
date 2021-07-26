@@ -12,15 +12,15 @@
 
     <!-- lidars -->
     <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
-
     <!--<node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
         <param name="serial_port" type="string" value="/dev/ttyUSB0"/>
         <param name="serial_baudrate" type="int" value="115200"/>
         <param name="frame_id" type="string" value="laser"/>
         <param name="inverted" type="bool" value="false"/>
-        <param name="angle_compensate" type="bool" value="true"/>
+        <param name="angle_cocmpensate" type="bool" value="true"/>
     </node>-->
-     <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
+    
+    <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
 
     <node name="robot_state_publisher" pkg="robot_state_publisher"
       type="robot_state_publisher" />
@@ -39,5 +39,10 @@
     <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
         type="cartographer_occupancy_grid_node" args="-resolution 0.02"
         output="screen" respawn="true"/>
-        
+    
+    
+    <!-- rgbd camera -->
+    <include file="$(find realsense2_camera)/launch/rs_voxel.launch"/>
+    <remap from="/camera/depth/color/points" to="/point_cloud2"/>
+    
 </launch>

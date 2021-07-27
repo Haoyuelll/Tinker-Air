@@ -35,4 +35,23 @@
         <child link="laser" />
         <origin xyz="${laser_trans_xyz}" />
     </joint>
+    
+    <!-- rgbd camera -->
+    <link name="camera_depth_optical_frame">
+        <visual>
+            <geometry>
+                <box size="0.03 0.12 0.02" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <material name="blue">
+                <color rgba="0 0 0.8 0.5" />
+            </material>
+        </visual>
+    </link>
+        <joint name="base_to_camera" type="fixed">
+        <parent link="base_link" />
+        <child link="camera_depth_optical_frame" />
+        <origin xyz="-0.225 0 1.16" rpy="-2.0944 0 -1.5707" />
+        <axis xyz="0 0 1" />
+    </joint>
 </robot>

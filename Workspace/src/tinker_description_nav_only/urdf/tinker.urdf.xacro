@@ -37,6 +37,7 @@
     </joint>
     
     <!-- rgbd camera -->
+    <xacro:property name="camera_depth_optical_frame_trans_xyz" value="-0.225 0 1.16" />
     <link name="camera_depth_optical_frame">
         <visual>
             <geometry>

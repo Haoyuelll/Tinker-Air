@@ -3,6 +3,7 @@
 global_costmap:
   global_frame: map
   robot_base_frame: base_link
+  camera_depth_optical_frame: camera_depth_optical_frame
   update_frequency: 1.0
   publish_frequency: 0.5
 

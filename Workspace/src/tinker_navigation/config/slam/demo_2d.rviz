@@ -4,7 +4,7 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /PointCloud22
+        - /DepthCloud1/Auto Size1
       Splitter Ratio: 0.6006709933280945
     Tree Height: 759
   - Class: rviz/Selection
@@ -129,7 +129,7 @@ Visualization Manager:
         All: true
         All Submap Pose Markers: true
         Trajectory 0:
-          0.49: true
+          0.12: true
           Submap Pose Markers: true
           Value: true
       Topic: /submap_list
@@ -258,6 +258,9 @@ Visualization Manager:
       Use Timestamp: false
       Value: true
     - Alpha: 1
+      Auto Size:
+        Auto Size Factor: 1
+        Value: true
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
         Max Value: 10
@@ -265,23 +268,28 @@ Visualization Manager:
         Value: true
       Axis: Z
       Channel Name: intensity
-      Class: rviz/PointCloud2
+      Class: rviz/DepthCloud
       Color: 255; 255; 255
-      Color Transformer: Intensity
+      Color Image Topic: ""
+      Color Transformer: RGB8
+      Color Transport Hint: raw
       Decay Time: 0
+      Depth Map Topic: /camera/depth/image_rect_raw
+      Depth Map Transport Hint: raw
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
       Min Color: 0; 0; 0
-      Name: PointCloud2
+      Name: DepthCloud
+      Occlusion Compensation:
+        Occlusion Time-Out: 30
+        Value: false
       Position Transformer: XYZ
-      Queue Size: 10
+      Queue Size: 5
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
       Style: Flat Squares
-      Topic: /camera/depth/color/points
-      Unreliable: false
+      Topic Filter: true
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
@@ -313,7 +321,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.0144286155700684
+      Distance: 5.949948310852051
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -350,4 +358,4 @@ Window Geometry:
     collapsed: false
   Width: 1855
   X: 705
-  Y: 281
+  Y: 244

@@ -41,9 +41,10 @@
     <link name="camera_link">
         <visual>
             <geometry>
-                <box size="0.03 0.12 0.02" />
+                <!--box size="0.03 0.12 0.02" /-->
+                <mesh filename="package://tinker_description_nav_only/meshes/d435.dae"/>
             </geometry>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 0" rpy="0.9983 0 -1.5707" />
             <material name="blue">
                 <color rgba="0 0 0.8 0.5" />
             </material>
@@ -51,8 +52,9 @@
     </link>
         <joint name="base_to_camera_link" type="fixed">
         <parent link="base_link" />
-        <child link="camera_link" />
-        <origin xyz="-0.225 0 1.32" rpy="-3.14159 -3.14159 -3.14159" />
+        <child link="camera_link" />0.2618
+        <origin xyz="-0.225 0 1.32" rpy="-3.14159 -3.64075 -3.14159" />
         <axis xyz="0 0 1" />
     </joint>
 </robot>
+

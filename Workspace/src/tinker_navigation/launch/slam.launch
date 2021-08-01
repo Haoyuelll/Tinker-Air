@@ -42,7 +42,7 @@
     
     
     <!-- rgbd camera -->
-    <include file="$(find realsense2_camera)/launch/rs_voxel.launch"/>
+    <include file="$(find tinker_navigation)/launch/rs_camera.launch"/>
     <remap from="/camera/depth/color/points" to="/point_cloud2"/>
     
 </launch>

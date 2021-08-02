@@ -12,14 +12,6 @@
 
     <!-- lidars -->
     <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
-    <!--<node name="rplidarNode" pkg="rplidar_ros" type="rplidarNode" output="screen">
-        <param name="serial_port" type="string" value="/dev/ttyUSB0"/>
-        <param name="serial_baudrate" type="int" value="115200"/>
-        <param name="frame_id" type="string" value="laser"/>
-        <param name="inverted" type="bool" value="false"/>
-        <param name="angle_cocmpensate" type="bool" value="true"/>
-    </node>-->
-    
     <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
 
     <node name="robot_state_publisher" pkg="robot_state_publisher"
@@ -43,6 +35,7 @@
     
     <!-- rgbd camera -->
     <include file="$(find tinker_navigation)/launch/rs_camera.launch"/>
+    <!--include file="$(find tinker_navigation)/launch/opensource_tracking.launch"/-->
     <remap from="/camera/depth/color/points" to="/point_cloud2"/>
     
 </launch>

@@ -12,11 +12,6 @@
 
     <!-- lidars -->
     <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
-    <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
-
-    <node name="robot_state_publisher" pkg="robot_state_publisher"
-      type="robot_state_publisher" />
-
 
     <!-- cartographer -->
     <!-- ref: https://readthedocs.org/projects/google-cartographer-ros/downloads/pdf/latest/ -->
@@ -34,8 +29,14 @@
     
     
     <!-- rgbd camera -->
-    <include file="$(find tinker_navigation)/launch/rs_camera.launch"/>
-    <!--include file="$(find tinker_navigation)/launch/opensource_tracking.launch"/-->
+    <!--include file="$(find tinker_navigation)/launch/rs_camera.launch"/-->
+    <include file="$(find tinker_navigation)/launch/opensource_tracking.launch"/>
     <remap from="/camera/depth/color/points" to="/point_cloud2"/>
+
+    <!-- robot -->
+    <param name="robot_description" command="xacro '$(find tinker_description_nav_only)/urdf/tinker.urdf.xacro'" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher"
+      type="robot_state_publisher" />
     
 </launch>

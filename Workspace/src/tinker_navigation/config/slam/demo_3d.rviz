@@ -23,7 +23,7 @@ Panels:
         - /Map3
         - /Map4
       Splitter Ratio: 0.6006709933280945
-    Tree Height: 858
+    Tree Height: 876
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -79,6 +79,8 @@ Visualization Manager:
           Value: true
         camera_accel_optical_frame:
           Value: true
+        camera_aligned_depth_to_color_frame:
+          Value: true
         camera_color_frame:
           Value: true
         camera_color_optical_frame:
@@ -89,7 +91,7 @@ Visualization Manager:
           Value: true
         camera_gyro_frame:
           Value: true
-        camera_gyro_optical_frame:
+        camera_imu_optical_frame:
           Value: true
         camera_link:
           Value: true
@@ -97,7 +99,8 @@ Visualization Manager:
           Value: true
         map:
           Value: true
-      Marker Alpha: 1
+        odom:
+          Value: true
       Marker Scale: 1
       Name: TF
       Show Arrows: true
@@ -110,15 +113,16 @@ Visualization Manager:
               camera_accel_frame:
                 camera_accel_optical_frame:
                   {}
-              camera_color_frame:
+              camera_aligned_depth_to_color_frame:
                 camera_color_optical_frame:
                   {}
+              camera_color_frame:
+                {}
               camera_depth_frame:
                 camera_depth_optical_frame:
                   {}
               camera_gyro_frame:
-                camera_gyro_optical_frame:
-                  {}
+                {}
             laser:
               {}
       Update Interval: 0
@@ -159,23 +163,12 @@ Visualization Manager:
       High Resolution: true
       Low Resolution: false
       Name: Submaps
-      Queue Size: 10
       Submap query service: /submap_query
       Submaps:
         All: true
         All Submap Pose Markers: true
         Trajectory 0:
-          0.180: true
-          1.180: true
-          10.27: true
-          2.180: true
-          3.180: true
-          4.180: true
-          5.180: true
-          6.180: true
-          7.180: true
-          8.180: true
-          9.117: true
+          0.20: true
           Submap Pose Markers: true
           Value: true
       Topic: /submap_list
@@ -197,7 +190,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: PointCloud2
       Position Transformer: XYZ
       Queue Size: 10
@@ -231,8 +226,6 @@ Visualization Manager:
       Marker Topic: /constraint_list
       Name: Constraints
       Namespaces:
-        Inter constraints, same trajectory: true
-        Inter residuals, same trajectory: true
         Intra constraints: true
         Intra residuals: true
       Queue Size: 100
@@ -254,7 +247,6 @@ Visualization Manager:
         Z: 0
       Pose Color: 255; 85; 255
       Pose Style: None
-      Queue Size: 10
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
@@ -278,7 +270,6 @@ Visualization Manager:
         Z: 0
       Pose Color: 255; 85; 255
       Pose Style: None
-      Queue Size: 10
       Radius: 0.029999999329447746
       Shaft Diameter: 0.10000000149011612
       Shaft Length: 0.10000000149011612
@@ -327,7 +318,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: DepthCloud
       Occlusion Compensation:
         Occlusion Time-Out: 30
@@ -356,7 +349,9 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: PointCloud2
       Position Transformer: ""
       Queue Size: 10
@@ -371,7 +366,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/Image
       Enabled: true
-      Image Topic: /camera/color/image_rect_raw
+      Image Topic: /camera/color/image_raw
       Max Value: 1
       Median window: 5
       Min Value: 0
@@ -404,12 +399,13 @@ Visualization Manager:
       Filter floor (m): 0
       Invert Rainbow: false
       Max Color: 255; 255; 255
+      Max Intensity: 4096
       Min Color: 0; 0; 0
+      Min Intensity: 0
       Name: MapCloud
       Node filtering angle (degrees): 30
       Node filtering radius (m): 0
       Position Transformer: ""
-      Queue Size: 10
       Size (Pixels): 3
       Size (m): 0.009999999776482582
       Style: Flat Squares
@@ -427,8 +423,7 @@ Visualization Manager:
       Merged neighbor: 255; 170; 0
       Name: MapGraph
       Neighbor: 0; 0; 255
-      Queue Size: 10
-      Topic: /rtabmap/mapgraph
+      Topic: /rtabmap/mapGraph
       Unreliable: false
       User: 255; 0; 0
       Value: true
@@ -439,7 +434,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /rabmap/octomap_grid
+      Topic: /rtabmap/octomap_grid
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -449,7 +444,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /rtab/grid_map
+      Topic: /rtabmap/grid_map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -487,7 +482,6 @@ Visualization Manager:
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
-      Field of View: 0.7853981852531433
       Focal Point:
         X: 0
         Y: 0
@@ -499,6 +493,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 0.3347979784011841
       Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
       Yaw: 6.117737293243408
     Saved: ~
 Window Geometry:
@@ -509,7 +504,7 @@ Window Geometry:
   Hide Right Dock: false
   Image:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000400000000000001c5000004c2fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000003e5000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650100000428000000d70000001600ffffff000000010000010f000004c2fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d000004c2000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000009b80000003efc0100000002fb0000000800540069006d00650100000000000009b8000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000006d8000004c200000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000001c5000004d8fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c0061007900730100000027000003f7000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650100000424000000db0000001600ffffff000000010000010f000004d8fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a005600690065007700730100000027000004d8000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000009b80000003efc0100000002fb0000000800540069006d00650100000000000009b8000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000006d8000004d800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:

@@ -14,3 +14,4 @@ local_costmap:
   plugins:
    - {name: static_layer,        type: "costmap_2d::StaticLayer"}
    - {name: obstacle_layer,      type: "costmap_2d::VoxelLayer"}
+   - {name: grid_layer,          type: "simple_layer_namespace::GridLayer"}

@@ -13,7 +13,7 @@
         <visual>
             <origin xyz="${stl_trans_xyz}" rpy="${stl_rotate_rpy}" />
             <geometry>
-                <mesh filename="package://tinker_description_nav_only/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
+                <mesh filename="package://tinker_description/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
             </geometry>
             <material name="">
                 <color rgba="0.6 0.6 0.6 1" />
@@ -22,7 +22,7 @@
         <collision>
             <origin xyz="${stl_trans_xyz}" rpy="${stl_rotate_rpy}" />
             <geometry>
-                <mesh filename="package://tinker_description_nav_only/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
+                <mesh filename="package://tinker_description/meshes/tinker_base.stl" scale="${stl_viz_scale}" />
             </geometry>
         </collision>
     </link>
@@ -76,7 +76,7 @@
     <xacro:property name="camera_link_trans_xyz" value="-0.225 0 1.32" />
     <link name="camera_link">
       <origin xyz="0 0 0" rpy="${-PI/180*28.6} 0 ${-PI/4}" />
-      <xacro:include filename="$(find tinker_description_nav_only)/urdf/_d435.urdf.xacro"/>
+      <xacro:include filename="$(find tinker_description)/urdf/_d435.urdf.xacro"/>
     </link>
     <joint name="base_to_camera_link" type="fixed">
         <parent link="base_link" />
@@ -149,10 +149,10 @@
 	<origin xyz="0 0 0" rpy="0.9983 0 -1.5707" />
 	<xacro:include filename="$(find realsense2_description)/urdf/_d435i_imu_modules.urdf.xacro"/>
     </link>
-    <joint name="base_to_imu_link" type="fixed">
-        <parent link="base_link" />
+    <joint name="camera_to_imu_link" type="fixed">
+        <parent link="camera_link" />
         <child link="imu_optical_frame" />
-        <origin xyz="${camera_link_trans_xyz}" rpy="-3.14159 -3.64075 -3.14159" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
         <axis xyz="0 0 0" />
     </joint>
       <link name="camera_accel_frame" />

@@ -144,28 +144,4 @@
       </joint>
       <link name="camera_color_optical_frame"/>
 
-      <!-- camera imu -->
-    <link name="imu_optical_frame">
-	<origin xyz="0 0 0" rpy="0.9983 0 -1.5707" />
-	<xacro:include filename="$(find realsense2_description)/urdf/_d435i_imu_modules.urdf.xacro"/>
-    </link>
-    <joint name="camera_to_imu_link" type="fixed">
-        <parent link="camera_link" />
-        <child link="imu_optical_frame" />
-        <origin xyz="0 0 0" rpy="0 0 0" />
-        <axis xyz="0 0 0" />
-    </joint>
-      <link name="camera_accel_frame" />
-      <link name="camera_accel_optical_frame" />
-      <joint name="camera_accel_joint" type="fixed">
-        <origin xyz = "-0.01174 -0.00552 0.0051" rpy = "0 0 0" />
-        <parent link="imu_optical_frame" />
-        <child link="camera_accel_frame" />
-      </joint>
-
-      <joint name="camera_accel_optical_joint" type="fixed">
-        <origin xyz = "0 0 0" rpy = "${-PI/2} 0 ${-PI/2}" />
-        <parent link="camera_accel_frame" />
-        <child link="camera_accel_optical_frame" />
-      </joint>
 </robot>

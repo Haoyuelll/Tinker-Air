@@ -11,7 +11,7 @@
     <arg if="$(eval load_static_map == '')" name="cartographer_arguments" value="" />
 
     <!-- lidars -->
-    <include file="$(find tinker_navigation)/launch/rplidar_a3.launch" />
+    <include file="$(find rplidar_ros)/launch/rplidar_a3.launch" />
 
     <!-- cartographer -->
     <!-- ref: https://readthedocs.org/projects/google-cartographer-ros/downloads/pdf/latest/ -->
@@ -30,7 +30,7 @@
     
     <!-- rgbd camera -->
     <!--include file="$(find tinker_navigation)/launch/rs_camera.launch"/-->
-    <include file="$(find tinker_navigation)/launch/opensource_tracking.launch"/>
+    <include file="$(find tinker_navigation)/launch/rgbd_rtab.launch"/>
     <remap from="/camera/aligned_depth_to_color/image_raw" to="/point_cloud2"/>
 
     <!-- robot -->

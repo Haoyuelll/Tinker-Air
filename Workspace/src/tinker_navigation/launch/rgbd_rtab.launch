@@ -1,10 +1,12 @@
 <launch>
     <arg name="offline"          default="false"/>
     <include unless="$(arg offline)" 
-        file="$(find tinker_navigation)/launch/rs_camera.launch">
+        file="$(find realsense2_camera)/launch/rs_camera.launch">
         <arg name="align_depth" value="true"/>
         <arg name="linear_accel_cov" value="1.0"/>
         <arg name="unite_imu_method" value="linear_interpolation"/>
+        <arg name="enable_gyro" value="true"/>
+        <arg name="enable_accel" value="true"/>
     </include>
     
     <node pkg="imu_filter_madgwick" type="imu_filter_node" name="ImuFilter">
@@ -14,14 +16,16 @@
         <remap from="/imu/data_raw" to="/camera/imu"/>
     </node>
 
-    <include file="$(find tinker_navigation)/launch/rtabmap.launch">
+    <include file="$(find rtabmap_ros)/launch/rtabmap.launch">
         <arg name="args" value="--delete_db_on_start"/>
+        <arg name="frame_id" value="base_link"/>
         <arg name="rgb_topic" value="/camera/color/image_raw"/>
         <arg name="depth_topic" value="/camera/aligned_depth_to_color/image_raw"/>
         <arg name="camera_info_topic" value="/camera/color/camera_info"/>
         <arg name="depth_camera_info_topic" value="/camera/depth/camera_info"/>
         <arg name="rtabmapviz" value="false"/>
         <arg name="rviz" value="true"/>
+        <arg name="rviz_cfg" value="$(find tinker_navigation)/config/slam/laser_rgbd_slam.rviz" />
     </include>
 
     <include file="$(find robot_localization)/launch/ukf_template.launch"/>
@@ -56,7 +60,7 @@
     <!-- Run a VoxelGrid filter to clean NaNs and downsample the data -->
     <!-- Range:0.01-1.35m voxel_size:0.02m -->
     <node pkg="nodelet" type="nodelet" name="voxel_grid" args="load pcl/VoxelGrid pcl_manager" output="screen">
-    <remap from="~input" to="/camera/aligned_depth_to_color/image_raw" />
+    <remap from="~input" to="/camera/depth/color/points" />
     <rosparam>
         filter_field_name: z
         filter_limit_min: 0.01

@@ -38,7 +38,7 @@
                                             false,false,false,
                                             false,false,false]
     </rosparam>
-    <param name="/ukf_se/odom0_relative" value="false"/>
+    <param name="/ukf_se/odom0_relative" value="true"/>
     <param name="/ukf_se/odom0_pose_rejection_threshold" value="10000000"/>
     <param name="/ukf_se/odom0_twist_rejection_threshold" value="10000000"/>
 

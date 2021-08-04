@@ -1,0 +1,1382 @@
+... logging to /home/a/.ros/log/c63b5e14-f503-11eb-854f-75ffc446be2c/roslaunch-a-22068.log
+Checking log directory for disk usage. This may take a while.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+
+started roslaunch server http://a:41741/
+
+SUMMARY
+========
+
+CLEAR PARAMETERS
+ * /ukf_se/
+
+PARAMETERS
+ * /ImuFilter/_publish_tf: False
+ * /ImuFilter/_world_frame: enu
+ * /ImuFilter/use_mag: False
+ * /camera/realsense2_camera/accel_fps: -1
+ * /camera/realsense2_camera/accel_frame_id: camera_accel_frame
+ * /camera/realsense2_camera/accel_optical_frame_id: camera_accel_opti...
+ * /camera/realsense2_camera/align_depth: True
+ * /camera/realsense2_camera/aligned_depth_to_color_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_fisheye_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra1_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/aligned_depth_to_infra2_frame_id: camera_aligned_de...
+ * /camera/realsense2_camera/allow_no_texture_points: False
+ * /camera/realsense2_camera/base_frame_id: camera_link
+ * /camera/realsense2_camera/calib_odom_file: 
+ * /camera/realsense2_camera/clip_distance: -2.0
+ * /camera/realsense2_camera/color_fps: -1
+ * /camera/realsense2_camera/color_frame_id: camera_color_frame
+ * /camera/realsense2_camera/color_height: -1
+ * /camera/realsense2_camera/color_optical_frame_id: camera_color_opti...
+ * /camera/realsense2_camera/color_width: -1
+ * /camera/realsense2_camera/confidence_fps: -1
+ * /camera/realsense2_camera/confidence_height: -1
+ * /camera/realsense2_camera/confidence_width: -1
+ * /camera/realsense2_camera/depth_fps: -1
+ * /camera/realsense2_camera/depth_frame_id: camera_depth_frame
+ * /camera/realsense2_camera/depth_height: -1
+ * /camera/realsense2_camera/depth_optical_frame_id: camera_depth_opti...
+ * /camera/realsense2_camera/depth_width: -1
+ * /camera/realsense2_camera/device_type: 
+ * /camera/realsense2_camera/enable_accel: True
+ * /camera/realsense2_camera/enable_color: True
+ * /camera/realsense2_camera/enable_confidence: True
+ * /camera/realsense2_camera/enable_depth: True
+ * /camera/realsense2_camera/enable_fisheye1: False
+ * /camera/realsense2_camera/enable_fisheye2: False
+ * /camera/realsense2_camera/enable_fisheye: False
+ * /camera/realsense2_camera/enable_gyro: True
+ * /camera/realsense2_camera/enable_infra1: False
+ * /camera/realsense2_camera/enable_infra2: False
+ * /camera/realsense2_camera/enable_infra: False
+ * /camera/realsense2_camera/enable_pointcloud: False
+ * /camera/realsense2_camera/enable_pose: False
+ * /camera/realsense2_camera/enable_sync: False
+ * /camera/realsense2_camera/filters: 
+ * /camera/realsense2_camera/fisheye1_frame_id: camera_fisheye1_f...
+ * /camera/realsense2_camera/fisheye1_optical_frame_id: camera_fisheye1_o...
+ * /camera/realsense2_camera/fisheye2_frame_id: camera_fisheye2_f...
+ * /camera/realsense2_camera/fisheye2_optical_frame_id: camera_fisheye2_o...
+ * /camera/realsense2_camera/fisheye_fps: -1
+ * /camera/realsense2_camera/fisheye_frame_id: camera_fisheye_frame
+ * /camera/realsense2_camera/fisheye_height: -1
+ * /camera/realsense2_camera/fisheye_optical_frame_id: camera_fisheye_op...
+ * /camera/realsense2_camera/fisheye_width: -1
+ * /camera/realsense2_camera/gyro_fps: -1
+ * /camera/realsense2_camera/gyro_frame_id: camera_gyro_frame
+ * /camera/realsense2_camera/gyro_optical_frame_id: camera_gyro_optic...
+ * /camera/realsense2_camera/imu_optical_frame_id: camera_imu_optica...
+ * /camera/realsense2_camera/infra1_frame_id: camera_infra1_frame
+ * /camera/realsense2_camera/infra1_optical_frame_id: camera_infra1_opt...
+ * /camera/realsense2_camera/infra2_frame_id: camera_infra2_frame
+ * /camera/realsense2_camera/infra2_optical_frame_id: camera_infra2_opt...
+ * /camera/realsense2_camera/infra_fps: 30
+ * /camera/realsense2_camera/infra_height: 480
+ * /camera/realsense2_camera/infra_rgb: False
+ * /camera/realsense2_camera/infra_width: 848
+ * /camera/realsense2_camera/initial_reset: False
+ * /camera/realsense2_camera/json_file_path: 
+ * /camera/realsense2_camera/linear_accel_cov: 1.0
+ * /camera/realsense2_camera/odom_frame_id: camera_odom_frame
+ * /camera/realsense2_camera/ordered_pc: False
+ * /camera/realsense2_camera/pointcloud_texture_index: 0
+ * /camera/realsense2_camera/pointcloud_texture_stream: RS2_STREAM_COLOR
+ * /camera/realsense2_camera/pose_frame_id: camera_pose_frame
+ * /camera/realsense2_camera/pose_optical_frame_id: camera_pose_optic...
+ * /camera/realsense2_camera/publish_odom_tf: True
+ * /camera/realsense2_camera/publish_tf: True
+ * /camera/realsense2_camera/rosbag_filename: 
+ * /camera/realsense2_camera/serial_no: 
+ * /camera/realsense2_camera/stereo_module/exposure/1: 7500
+ * /camera/realsense2_camera/stereo_module/exposure/2: 1
+ * /camera/realsense2_camera/stereo_module/gain/1: 16
+ * /camera/realsense2_camera/stereo_module/gain/2: 16
+ * /camera/realsense2_camera/tf_publish_rate: 0.0
+ * /camera/realsense2_camera/topic_odom_in: odom_in
+ * /camera/realsense2_camera/unite_imu_method: linear_interpolation
+ * /camera/realsense2_camera/usb_port_id: 
+ * /move_base/TebLocalPlannerROS/acc_lim_theta: 1.0
+ * /move_base/TebLocalPlannerROS/acc_lim_x: 0.45
+ * /move_base/TebLocalPlannerROS/acc_lim_y: 0.31
+ * /move_base/TebLocalPlannerROS/footprint_model/type: polygon
+ * /move_base/TebLocalPlannerROS/footprint_model/vertices: [[0.325, 0.3], [0...
+ * /move_base/TebLocalPlannerROS/inflation_dist: 0.4
+ * /move_base/TebLocalPlannerROS/map_frame: /map
+ * /move_base/TebLocalPlannerROS/max_vel_theta: 1.0
+ * /move_base/TebLocalPlannerROS/max_vel_x: 0.45
+ * /move_base/TebLocalPlannerROS/max_vel_x_backwards: 0.225
+ * /move_base/TebLocalPlannerROS/max_vel_y: 0.31
+ * /move_base/TebLocalPlannerROS/min_obstacle_dist: 0.15
+ * /move_base/TebLocalPlannerROS/min_turning_radius: 0.0
+ * /move_base/TebLocalPlannerROS/odom_topic: odom
+ * /move_base/TebLocalPlannerROS/weight_kinematics_forward_drive: 10.0
+ * /move_base/TebLocalPlannerROS/weight_kinematics_nh: 10.0
+ * /move_base/aggressive_reset/layer_names: ['obstacle_layer']
+ * /move_base/aggressive_reset/reset_distance: 0.0
+ * /move_base/base_local_planner: teb_local_planner...
+ * /move_base/controller_frequency: 10.0
+ * /move_base/controller_patience: 3.0
+ * /move_base/global_costmap/footprint: [[0.325, 0.3], [0...
+ * /move_base/global_costmap/global_frame: map
+ * /move_base/global_costmap/inflation_layer/cost_scaling_factor: 10.0
+ * /move_base/global_costmap/inflation_layer/enabled: True
+ * /move_base/global_costmap/inflation_layer/inflation_radius: 0.35
+ * /move_base/global_costmap/obstacle_layer/combination_method: 1
+ * /move_base/global_costmap/obstacle_layer/enabled: True
+ * /move_base/global_costmap/obstacle_layer/inflation_radius: 0.5
+ * /move_base/global_costmap/obstacle_layer/laser_scan_sensor/clearing: True
+ * /move_base/global_costmap/obstacle_layer/laser_scan_sensor/data_type: LaserScan
+ * /move_base/global_costmap/obstacle_layer/laser_scan_sensor/marking: True
+ * /move_base/global_costmap/obstacle_layer/laser_scan_sensor/topic: scan
+ * /move_base/global_costmap/obstacle_layer/observation_sources: laser_scan_sensor...
+ * /move_base/global_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/global_costmap/obstacle_layer/point_cloud2_sensor/clearing: True
+ * /move_base/global_costmap/obstacle_layer/point_cloud2_sensor/data_type: PointCloud2
+ * /move_base/global_costmap/obstacle_layer/point_cloud2_sensor/marking: True
+ * /move_base/global_costmap/obstacle_layer/point_cloud2_sensor/topic: /rtabmap/cloud_map
+ * /move_base/global_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base/global_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/global_costmap/plugins: [{'name': 'static...
+ * /move_base/global_costmap/publish_frequency: 0.5
+ * /move_base/global_costmap/robot_base_frame: base_link
+ * /move_base/global_costmap/static_layer/enabled: True
+ * /move_base/global_costmap/static_layer/lethal_cost_threshold: 90
+ * /move_base/global_costmap/static_layer/map_topic: /map
+ * /move_base/global_costmap/transform_tolerance: 0.5
+ * /move_base/global_costmap/update_frequency: 1.0
+ * /move_base/local_costmap/footprint: [[0.325, 0.3], [0...
+ * /move_base/local_costmap/global_frame: camera_imu_optica...
+ * /move_base/local_costmap/height: 3.0
+ * /move_base/local_costmap/inflation_layer/cost_scaling_factor: 10.0
+ * /move_base/local_costmap/inflation_layer/enabled: True
+ * /move_base/local_costmap/inflation_layer/inflation_radius: 0.35
+ * /move_base/local_costmap/obstacle_layer/combination_method: 1
+ * /move_base/local_costmap/obstacle_layer/enabled: True
+ * /move_base/local_costmap/obstacle_layer/inflation_radius: 0.5
+ * /move_base/local_costmap/obstacle_layer/laser_scan_sensor/clearing: True
+ * /move_base/local_costmap/obstacle_layer/laser_scan_sensor/data_type: LaserScan
+ * /move_base/local_costmap/obstacle_layer/laser_scan_sensor/marking: True
+ * /move_base/local_costmap/obstacle_layer/laser_scan_sensor/topic: scan
+ * /move_base/local_costmap/obstacle_layer/observation_sources: laser_scan_sensor...
+ * /move_base/local_costmap/obstacle_layer/obstacle_range: 3.0
+ * /move_base/local_costmap/obstacle_layer/point_cloud2_sensor/clearing: True
+ * /move_base/local_costmap/obstacle_layer/point_cloud2_sensor/data_type: PointCloud2
+ * /move_base/local_costmap/obstacle_layer/point_cloud2_sensor/marking: True
+ * /move_base/local_costmap/obstacle_layer/point_cloud2_sensor/topic: /rtabmap/cloud_map
+ * /move_base/local_costmap/obstacle_layer/raytrace_range: 4.0
+ * /move_base/local_costmap/obstacle_layer/track_unknown_space: True
+ * /move_base/local_costmap/plugins: [{'name': 'static...
+ * /move_base/local_costmap/publish_frequency: 2.0
+ * /move_base/local_costmap/resolution: 0.1
+ * /move_base/local_costmap/robot_base_frame: base_link
+ * /move_base/local_costmap/rolling_window: True
+ * /move_base/local_costmap/static_layer/enabled: True
+ * /move_base/local_costmap/static_layer/lethal_cost_threshold: 90
+ * /move_base/local_costmap/static_layer/map_topic: /map
+ * /move_base/local_costmap/transform_tolerance: 0.5
+ * /move_base/local_costmap/update_frequency: 5.0
+ * /move_base/local_costmap/width: 3.0
+ * /move_base/oscillation_distance: 0.2
+ * /move_base/oscillation_timeout: 10.0
+ * /move_base/planner_frequency: 1.0
+ * /move_base/planner_patience: 5.0
+ * /move_base/recovery_behavior_enabled: True
+ * /move_base/recovery_behaviors: [{'name': 'aggres...
+ * /move_base/shutdown_costmaps: False
+ * /obstacles_detection/Grid/MaxObstacleHeight: 1.35
+ * /obstacles_detection/Grid/MinClusterSize: 10
+ * /obstacles_detection/frame_id: base_link
+ * /obstacles_detection/map_frame_id: cloud_map
+ * /points_xyzrgb/approx_sync: True
+ * /points_xyzrgb/decimation: 4.0
+ * /points_xyzrgb/voxel_size: 0.0
+ * /robot_description: <?xml version="1....
+ * /rosdistro: noetic
+ * /rosversion: 1.15.11
+ * /rplidarNode/angle_compensate: True
+ * /rplidarNode/frame_id: laser
+ * /rplidarNode/inverted: False
+ * /rplidarNode/scan_mode: Sensitivity
+ * /rplidarNode/serial_baudrate: 256000
+ * /rplidarNode/serial_port: /dev/ttyUSB0
+ * /rtabmap/rgbd_odometry/approx_sync: True
+ * /rtabmap/rgbd_odometry/config_path: 
+ * /rtabmap/rgbd_odometry/expected_update_rate: 0.0
+ * /rtabmap/rgbd_odometry/frame_id: base_link
+ * /rtabmap/rgbd_odometry/ground_truth_base_frame_id: 
+ * /rtabmap/rgbd_odometry/ground_truth_frame_id: 
+ * /rtabmap/rgbd_odometry/guess_frame_id: 
+ * /rtabmap/rgbd_odometry/guess_min_rotation: 0.0
+ * /rtabmap/rgbd_odometry/guess_min_translation: 0.0
+ * /rtabmap/rgbd_odometry/keep_color: False
+ * /rtabmap/rgbd_odometry/max_update_rate: 0.0
+ * /rtabmap/rgbd_odometry/odom_frame_id: odom
+ * /rtabmap/rgbd_odometry/publish_tf: True
+ * /rtabmap/rgbd_odometry/queue_size: 10
+ * /rtabmap/rgbd_odometry/subscribe_rgbd: False
+ * /rtabmap/rgbd_odometry/wait_for_transform_duration: 0.2
+ * /rtabmap/rgbd_odometry/wait_imu_to_init: False
+ * /rtabmap/rtabmap/Mem/IncrementalMemory: true
+ * /rtabmap/rtabmap/Mem/InitWMWithAllNodes: false
+ * /rtabmap/rtabmap/approx_sync: True
+ * /rtabmap/rtabmap/config_path: 
+ * /rtabmap/rtabmap/database_path: ~/.ros/rtabmap.db
+ * /rtabmap/rtabmap/frame_id: base_link
+ * /rtabmap/rtabmap/gen_scan: False
+ * /rtabmap/rtabmap/ground_truth_base_frame_id: 
+ * /rtabmap/rtabmap/ground_truth_frame_id: 
+ * /rtabmap/rtabmap/landmark_angular_variance: 9999.0
+ * /rtabmap/rtabmap/landmark_linear_variance: 0.0001
+ * /rtabmap/rtabmap/map_frame_id: map
+ * /rtabmap/rtabmap/odom_frame_id: 
+ * /rtabmap/rtabmap/odom_frame_id_init: 
+ * /rtabmap/rtabmap/odom_sensor_sync: False
+ * /rtabmap/rtabmap/odom_tf_angular_variance: 1.0
+ * /rtabmap/rtabmap/odom_tf_linear_variance: 1.0
+ * /rtabmap/rtabmap/publish_tf: True
+ * /rtabmap/rtabmap/queue_size: 10
+ * /rtabmap/rtabmap/scan_cloud_max_points: 0
+ * /rtabmap/rtabmap/subscribe_depth: True
+ * /rtabmap/rtabmap/subscribe_odom_info: True
+ * /rtabmap/rtabmap/subscribe_rgb: True
+ * /rtabmap/rtabmap/subscribe_rgbd: False
+ * /rtabmap/rtabmap/subscribe_scan: False
+ * /rtabmap/rtabmap/subscribe_scan_cloud: False
+ * /rtabmap/rtabmap/subscribe_scan_descriptor: False
+ * /rtabmap/rtabmap/subscribe_stereo: False
+ * /rtabmap/rtabmap/subscribe_user_data: False
+ * /rtabmap/rtabmap/wait_for_transform_duration: 0.2
+ * /ukf_se/acceleration_gains: [0.8, 0.0, 0.0, 0...
+ * /ukf_se/acceleration_limits: [1.3, 0.0, 0.0, 0...
+ * /ukf_se/alpha: 0.001
+ * /ukf_se/base_link_frame: base_link
+ * /ukf_se/beta: 2
+ * /ukf_se/control_config: [True, False, Fal...
+ * /ukf_se/control_timeout: 0.2
+ * /ukf_se/debug: False
+ * /ukf_se/debug_out_file: /path/to/debug/fi...
+ * /ukf_se/deceleration_gains: [1.0, 0.0, 0.0, 0...
+ * /ukf_se/deceleration_limits: [1.3, 0.0, 0.0, 0...
+ * /ukf_se/frequency: 300
+ * /ukf_se/imu0: /imu/data
+ * /ukf_se/imu0_config: [True, True, True...
+ * /ukf_se/imu0_differential: True
+ * /ukf_se/imu0_linear_acceleration_rejection_threshold: 0.8
+ * /ukf_se/imu0_nodelay: False
+ * /ukf_se/imu0_pose_rejection_threshold: 0.8
+ * /ukf_se/imu0_queue_size: 5
+ * /ukf_se/imu0_relative: False
+ * /ukf_se/imu0_remove_gravitational_acceleration: True
+ * /ukf_se/imu0_twist_rejection_threshold: 0.8
+ * /ukf_se/initial_estimate_covariance: ['1e-9', 0, 0, 0,...
+ * /ukf_se/kappa: 0
+ * /ukf_se/map_frame: map
+ * /ukf_se/odom0: rtabmap/odom
+ * /ukf_se/odom0_config: [False, False, Fa...
+ * /ukf_se/odom0_differential: False
+ * /ukf_se/odom0_nodelay: False
+ * /ukf_se/odom0_pose_rejection_threshold: 10000000
+ * /ukf_se/odom0_queue_size: 2
+ * /ukf_se/odom0_relative: False
+ * /ukf_se/odom0_twist_rejection_threshold: 10000000
+ * /ukf_se/odom1: example/another_odom
+ * /ukf_se/odom1_config: [False, False, Tr...
+ * /ukf_se/odom1_differential: False
+ * /ukf_se/odom1_nodelay: False
+ * /ukf_se/odom1_pose_rejection_threshold: 2
+ * /ukf_se/odom1_queue_size: 2
+ * /ukf_se/odom1_relative: True
+ * /ukf_se/odom1_twist_rejection_threshold: 0.2
+ * /ukf_se/odom_frame: odom
+ * /ukf_se/permit_corrected_publication: False
+ * /ukf_se/pose0: example/pose
+ * /ukf_se/pose0_config: [True, True, Fals...
+ * /ukf_se/pose0_differential: True
+ * /ukf_se/pose0_nodelay: False
+ * /ukf_se/pose0_queue_size: 5
+ * /ukf_se/pose0_rejection_threshold: 2
+ * /ukf_se/pose0_relative: False
+ * /ukf_se/print_diagnostics: True
+ * /ukf_se/process_noise_covariance: [0.05, 0, 0, 0, 0...
+ * /ukf_se/publish_acceleration: False
+ * /ukf_se/publish_tf: True
+ * /ukf_se/sensor_timeout: 0.1
+ * /ukf_se/stamped_control: False
+ * /ukf_se/transform_time_offset: 0.0
+ * /ukf_se/transform_timeout: 0.0
+ * /ukf_se/twist0: example/twist
+ * /ukf_se/twist0_config: [False, False, Fa...
+ * /ukf_se/twist0_nodelay: False
+ * /ukf_se/twist0_queue_size: 3
+ * /ukf_se/twist0_rejection_threshold: 2
+ * /ukf_se/two_d_mode: False
+ * /ukf_se/use_control: False
+ * /ukf_se/world_frame: odom
+ * /voxel_grid/filter_field_name: z
+ * /voxel_grid/filter_limit_max: 1.35
+ * /voxel_grid/filter_limit_min: 0.01
+ * /voxel_grid/filter_limit_negative: False
+ * /voxel_grid/leaf_size: 0.02
+
+NODES
+  /
+    ImuFilter (imu_filter_madgwick/imu_filter_node)
+    cartographer_node (cartographer_ros/cartographer_node)
+    cartographer_occupancy_grid_node (cartographer_ros/cartographer_occupancy_grid_node)
+    move_base (move_base/move_base)
+    obstacles_detection (nodelet/nodelet)
+    pcl_manager (nodelet/nodelet)
+    points_xyzrgb (nodelet/nodelet)
+    robot_state_publisher (robot_state_publisher/robot_state_publisher)
+    rplidarNode (rplidar_ros/rplidarNode)
+    rviz (rviz/rviz)
+    ukf_se (robot_localization/ukf_localization_node)
+    voxel_grid (nodelet/nodelet)
+  /camera/
+    realsense2_camera (nodelet/nodelet)
+    realsense2_camera_manager (nodelet/nodelet)
+  /rtabmap/
+    rgbd_odometry (rtabmap_ros/rgbd_odometry)
+    rtabmap (rtabmap_ros/rtabmap)
+
+auto-starting new master
+process[master]: started with pid [22078]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to c63b5e14-f503-11eb-854f-75ffc446be2c
+process[rosout-1]: started with pid [22088]
+started core service [/rosout]
+process[rplidarNode-2]: started with pid [22096]
+process[cartographer_node-3]: started with pid [22097]
+process[cartographer_occupancy_grid_node-4]: started with pid [22098]
+process[camera/realsense2_camera_manager-5]: started with pid [22103]
+[ INFO] [1628068213.237436568]: RPLIDAR running on ROS package rplidar_ros. SDK Version:1.12.0
+process[camera/realsense2_camera-6]: started with pid [22105]
+ERROR: cannot launch node of type [imu_filter_madgwick/imu_filter_node]: imu_filter_madgwick
+ROS path [0]=/opt/ros/noetic/share/ros
+ROS path [1]=/home/a/ros_workspace/Tinker-Air/Workspace/src
+ROS path [2]=/home/a/ros_workspace/catkin_ws_packages/src
+ROS path [3]=/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share
+ROS path [4]=/opt/ros/noetic/share
+process[rtabmap/rgbd_odometry-8]: started with pid [22106]
+process[rtabmap/rtabmap-9]: started with pid [22109]
+[ INFO] [1628068213.260288274]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/Tinker-Air/Workspace/src/tinker_navigation/config/slam/single_rplidar.lua' for 'single_rplidar.lua'.
+process[rviz-10]: started with pid [22122]
+[ INFO] [1628068213.261426348]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1628068213.261469891]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1628068213.261529238]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1628068213.261562171]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1628068213.261694059]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1628068213.261726617]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1628068213.261781049]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1628068213.261811549]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1628068213.261934669]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1628068213.261965902]: I0804 17:10:13.000000 22097 configuration_file_resolver.cc:41] Found '/home/a/ros_workspace/catkin_ws_cartographer/install_isolated/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+process[points_xyzrgb-11]: started with pid [22131]
+[ INFO] [1628068213.271507539]: I0804 17:10:13.000000 22097 map_builder_bridge.cc:135] Added trajectory with ID '0'.
+[ INFO] [1628068213.272256233]: Initializing nodelet with 12 worker threads.
+process[ukf_se-12]: started with pid [22151]
+type is rtabmap_ros/point_cloud_xyzrgb
+process[pcl_manager-13]: started with pid [22153]
+process[voxel_grid-14]: started with pid [22154]
+process[obstacles_detection-15]: started with pid [22163]
+process[robot_state_publisher-16]: started with pid [22166]
+[ INFO] [1628068213.317558423]: Loading nodelet /voxel_grid of type pcl/VoxelGrid to manager pcl_manager with the following remappings:
+[ INFO] [1628068213.319230060]: /voxel_grid/input -> /camera/depth/color/points
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[ INFO] [1628068213.321359653]: waitForService: Service [/pcl_manager/load_nodelet] has not been advertised, waiting...
+process[move_base-17]: started with pid [22172]
+[ INFO] [1628068213.338147011]: Loading nodelet /obstacles_detection of type rtabmap_ros/obstacles_detection to manager pcl_manager with the following remappings:
+[ INFO] [1628068213.342967610]: /cloud -> /voxel_grid/output
+[ INFO] [1628068213.343031197]: /ground -> /ground
+[ INFO] [1628068213.343051444]: /obstacles -> /obstacles
+[ INFO] [1628068213.354854568]: Initializing nodelet with 12 worker threads.
+[ INFO] [1628068213.355734954]: waitForService: Service [/pcl_manager/load_nodelet] has not been advertised, waiting...
+[ INFO] [1628068213.375295568]: waitForService: Service [/pcl_manager/load_nodelet] is now available.
+[ INFO] [1628068213.378249396]: waitForService: Service [/pcl_manager/load_nodelet] is now available.
+[ WARN] [1628068213.420645434]: Warning: Some position entries in parameter imu0_config are listed true, but sensor_msgs/Imu contains no information about position
+[ WARN] [1628068213.426392883]: Warning: /imu/data is listed as an input topic, but all its update variables are false
+[ INFO] [1628068213.596921732]: Starting node...
+[ INFO] [1628068213.622199587]: Initializing nodelet with 12 worker threads.
+[ INFO] [1628068213.632018816]: Initializing nodelet with 12 worker threads.
+[ INFO] [1628068213.702642992]: Approximate time sync = true
+[ INFO] [1628068213.723578195]: Odometry: frame_id               = base_link
+[ INFO] [1628068213.723623450]: Odometry: odom_frame_id          = odom
+[ INFO] [1628068213.723641520]: Odometry: publish_tf             = true
+[ INFO] [1628068213.723653136]: Odometry: wait_for_transform     = true
+[ INFO] [1628068213.723671214]: Odometry: wait_for_transform_duration  = 0.200000
+[ INFO] [1628068213.723701201]: Odometry: initial_pose           = xyz=0.000000,0.000000,0.000000 rpy=0.000000,-0.000000,0.000000
+[ INFO] [1628068213.723713334]: Odometry: ground_truth_frame_id  = 
+[ INFO] [1628068213.723742891]: Odometry: ground_truth_base_frame_id = 
+[ INFO] [1628068213.723778187]: Odometry: config_path            = 
+[ INFO] [1628068213.723792430]: Odometry: publish_null_when_lost = true
+[ INFO] [1628068213.723804373]: Odometry: guess_frame_id         = 
+[ INFO] [1628068213.723816772]: Odometry: guess_min_translation  = 0.000000
+[ INFO] [1628068213.723828879]: Odometry: guess_min_rotation     = 0.000000
+[ INFO] [1628068213.723840838]: Odometry: guess_min_time         = 0.000000
+[ INFO] [1628068213.723852802]: Odometry: expected_update_rate   = 0.000000 Hz
+[ INFO] [1628068213.723864657]: Odometry: max_update_rate        = 0.000000 Hz
+[ INFO] [1628068213.723876130]: Odometry: wait_imu_to_init       = false
+[ INFO] [1628068213.723930354]: Odometry: stereoParams_=0 visParams_=1 icpParams_=0
+[ INFO] [1628068213.738878606]: RealSense ROS v2.3.1
+[ INFO] [1628068213.738915324]: Built with LibRealSense v2.48.0
+[ INFO] [1628068213.738935031]: Running with LibRealSense v2.48.0
+RPLIDAR S/N: 959D99F6C9E59AD4C5E59CF7694F3414
+[ INFO] [1628068213.742278804]: Firmware Ver: 1.27
+[ INFO] [1628068213.742312268]: Hardware Rev: 6
+[ INFO] [1628068213.743156440]: RPLidar health status : 0
+[ INFO] [1628068213.767514704]:  
+[ INFO] [1628068213.788121373]: Device with serial number 046322250291 was found.
+
+[ INFO] [1628068213.788215505]: Device with physical ID /sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4.1/2-4.1.1/2-4.1.1:1.0/video4linux/video4 was found.
+[ INFO] [1628068213.788239177]: Device with name Intel RealSense D455 was found.
+[ INFO] [1628068213.788789583]: Device with port number 2-4.1.1 was found.
+[ INFO] [1628068213.788865411]: Device USB type: 3.2
+[ INFO] [1628068213.792025798]: /rtabmap/rtabmap(maps): map_filter_radius          = 0.000000
+[ INFO] [1628068213.792095809]: /rtabmap/rtabmap(maps): map_filter_angle           = 30.000000
+[ INFO] [1628068213.792115849]: /rtabmap/rtabmap(maps): map_cleanup                = true
+[ INFO] [1628068213.792148979]: /rtabmap/rtabmap(maps): map_always_update          = false
+[ INFO] [1628068213.792161590]: /rtabmap/rtabmap(maps): map_empty_ray_tracing      = true
+[ INFO] [1628068213.792175091]: /rtabmap/rtabmap(maps): cloud_output_voxelized     = true
+[ INFO] [1628068213.792187412]: /rtabmap/rtabmap(maps): cloud_subtract_filtering   = false
+[ INFO] [1628068213.792222710]: /rtabmap/rtabmap(maps): cloud_subtract_filtering_min_neighbors = 2
+[ INFO] [1628068213.801103539]: /rtabmap/rtabmap(maps): octomap_tree_depth         = 16
+[ WARN] [1628068213.807779551]: Failed to meet update rate! Took 0.0095398510000000002335
+[ INFO] [1628068213.815843659]: getParameters...
+[ INFO] [1628068213.905626302]: rtabmap: frame_id      = base_link
+[ INFO] [1628068213.905658768]: rtabmap: map_frame_id  = map
+[ INFO] [1628068213.905670279]: rtabmap: use_action_for_goal  = false
+[ INFO] [1628068213.905689960]: rtabmap: tf_delay      = 0.050000
+[ INFO] [1628068213.905700278]: rtabmap: tf_tolerance  = 0.100000
+[ INFO] [1628068213.905711749]: rtabmap: odom_sensor_sync   = false
+[ INFO] [1628068213.906733653]: rtabmap: gen_scan  = false
+[ INFO] [1628068213.906752350]: rtabmap: gen_depth  = false
+[ INFO] [1628068213.946674192]: setupDevice...
+[ INFO] [1628068213.946724439]: JSON file is not provided
+[ INFO] [1628068213.946757975]: ROS Node Namespace: camera
+[ INFO] [1628068213.946773451]: Device Name: Intel RealSense D455
+[ INFO] [1628068213.946783341]: Device Serial No: 046322250291
+[ INFO] [1628068213.946806262]: Device physical port: /sys/devices/pci0000:00/0000:00:14.0/usb2/2-4/2-4.1/2-4.1.1/2-4.1.1:1.0/video4linux/video4
+[ INFO] [1628068213.946826021]: Device FW version: 05.12.14.50
+[ INFO] [1628068213.946865235]: Device Product ID: 0x0B5C
+[ INFO] [1628068213.946907522]: Enable PointCloud: Off
+[ INFO] [1628068213.946923318]: Align Depth: On
+[ INFO] [1628068213.946936753]: Sync Mode: On
+[ INFO] [1628068213.946979131]: Device Sensors: 
+[ INFO] [1628068213.954495774]: Stereo Module was found.
+ 04/08 17:10:13,954 WARNING [140160384341760] (backend-v4l2.cpp:1358) Pixel format 36315752-1a66-a242-9065-d01814a likely requires patch for fourcc code RW16!
+[ INFO] [1628068213.959838794]: RGB Camera was found.
+[ INFO] [1628068213.959991489]: Motion Module was found.
+[ INFO] [1628068213.960037105]: (Confidence, 0) sensor isn't supported by current device! -- Skipping...
+[ INFO] [1628068213.960260238]: num_filters: 1
+[ INFO] [1628068213.960275921]: Setting Dynamic reconfig parameters.
+[ WARN] [1628068213.993561126]: Param '/camera/stereo_module/auto_exposure_limit' has value 0 that is not in range [1, 165000]. Removing this parameter from dynamic reconfigure options.
+[ WARN] [1628068213.994427466]: Param '/camera/stereo_module/auto_gain_limit' has value 0 that is not in range [16, 248]. Removing this parameter from dynamic reconfigure options.
+[ WARN] [1628068214.019372979]: Param '/camera/rgb_camera/power_line_frequency' has value 3 that is not in the enum { {50Hz: 1} {60Hz: 2} {Disabled: 0} }. Removing this parameter from dynamic reconfigure options.
+[ INFO] [1628068214.044503004]: Done Setting Dynamic reconfig parameters.
+[ INFO] [1628068214.044967971]: depth stream is enabled - width: 848, height: 480, fps: 30, Format: Z16
+[ INFO] [1628068214.045875526]: color stream is enabled - width: 1280, height: 720, fps: 30, Format: RGB8
+[ INFO] [1628068214.046901939]: gyro stream is enabled - fps: 200
+[ INFO] [1628068214.046924059]: accel stream is enabled - fps: 63
+[ INFO] [1628068214.046941430]: setupPublishers...
+[ INFO] [1628068214.050491006]: Expected frequency for depth = 30.00000
+[ INFO] [1628068214.120975568]: Expected frequency for color = 30.00000
+[ INFO] [1628068214.188602422]: Expected frequency for aligned_depth_to_color = 30.00000
+[ INFO] [1628068214.259043400]: obstacles_detection: Setting parameter "Grid/MaxObstacleHeight"="1.35"
+[ INFO] [1628068214.259846992]: Start publisher IMU
+[ INFO] [1628068214.261816935]: obstacles_detection: Setting parameter "Grid/MinClusterSize"="10"
+[ INFO] [1628068214.262622454]: setupStreams...
+[ INFO] [1628068214.263179879]: insert Depth to Stereo Module
+[ INFO] [1628068214.263235919]: insert Color to RGB Camera
+[ INFO] [1628068214.263258069]: insert Gyro to Motion Module
+[ INFO] [1628068214.263274957]: insert Accel to Motion Module
+ 04/08 17:10:14,263 WARNING [140160384341760] (ds5-motion.cpp:473) IMU Calibration is not available, default intrinsic and extrinsic will be used.
+[ INFO] [1628068214.294451898]: SELECTED BASE:Depth, 0
+[ INFO] [1628068214.317569666]: RealSense Node Is Up!
+[ INFO] [1628068214.354589789]: Setting RTAB-Map parameter "Mem/IncrementalMemory"="true"
+[ INFO] [1628068214.355033660]: Setting RTAB-Map parameter "Mem/InitWMWithAllNodes"="false"
+[ INFO] [1628068214.355670277]: current scan mode: Sensitivity, max_distance: 25.0 m, Point number: 15.9K , angle_compensate: 4
+[ WARN] [1628068214.391196685]: 
+ 04/08 17:10:14,434 WARNING [140159907505920] (sensor.cpp:985) HID timestamp not found, switching to Host timestamps.
+[ INFO] [1628068214.444216879]: RGBDOdometry: approx_sync    = true
+[ INFO] [1628068214.444252022]: RGBDOdometry: queue_size     = 10
+[ INFO] [1628068214.444262920]: RGBDOdometry: subscribe_rgbd = false
+[ INFO] [1628068214.444272257]: RGBDOdometry: rgbd_cameras   = 1
+[ INFO] [1628068214.444303887]: RGBDOdometry: keep_color     = false
+[ INFO] [1628068214.458189982]: 
+/rtabmap/rgbd_odometry subscribed to (approx sync):
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info
+[ INFO] [1628068214.725939805]: RTAB-Map detection rate = 1.000000 Hz
+[ INFO] [1628068214.733076187]: rtabmap: Deleted database "/home/a/.ros/rtabmap.db" (--delete_db_on_start or -d are set).
+[ INFO] [1628068214.733150038]: rtabmap: Using database from "/home/a/.ros/rtabmap.db" (0 MB).
+[ WARN] [1628068214.850080223]: Could not compute submap fading: "map" passed to lookupTransform argument target_frame does not exist. 
+[ INFO] [1628068214.900324267]: rtabmap: Database version = "0.20.10".
+[ INFO] [1628068214.900454677]: rtabmap: SLAM mode (Mem/IncrementalMemory=true)
+[ INFO] [1628068214.925708811]: /rtabmap/rtabmap: subscribe_depth = true
+[ INFO] [1628068214.925762274]: /rtabmap/rtabmap: subscribe_rgb = true
+[ INFO] [1628068214.925786369]: /rtabmap/rtabmap: subscribe_stereo = false
+[ INFO] [1628068214.925811748]: /rtabmap/rtabmap: subscribe_rgbd = false (rgbd_cameras=1)
+[ INFO] [1628068214.925827465]: /rtabmap/rtabmap: subscribe_odom_info = true
+[ INFO] [1628068214.925841068]: /rtabmap/rtabmap: subscribe_user_data = false
+[ INFO] [1628068214.925860966]: /rtabmap/rtabmap: subscribe_scan = false
+[ INFO] [1628068214.925882189]: /rtabmap/rtabmap: subscribe_scan_cloud = false
+[ INFO] [1628068214.925900746]: /rtabmap/rtabmap: subscribe_scan_descriptor = false
+[ INFO] [1628068214.925929263]: /rtabmap/rtabmap: queue_size    = 10
+[ INFO] [1628068214.925951250]: /rtabmap/rtabmap: approx_sync   = true
+[ INFO] [1628068214.926043550]: Setup depth callback
+[ INFO] [1628068214.941786882]: 
+/rtabmap/rtabmap subscribed to (approx sync):
+   /rtabmap/odom \
+   /camera/color/image_raw \
+   /camera/aligned_depth_to_color/image_raw \
+   /camera/color/camera_info \
+   /rtabmap/odom_info
+[ INFO] [1628068214.953235812]: Odom: quality=0, std dev=99.995000m|99.995000rad, update time=0.056872s
+[ INFO] [1628068215.089104123]: rtabmap 0.20.10 started...
+[ INFO] [1628068215.091752588]: Odom: quality=284, std dev=0.017543m|0.054216rad, update time=0.132545s
+[ INFO] [1628068215.154814722]: Odom: quality=332, std dev=0.015922m|0.056744rad, update time=0.061923s
+[ INFO] [1628068215.226235818]: Odom: quality=312, std dev=0.020375m|0.058258rad, update time=0.070239s
+[ INFO] [1628068215.308130742]: Odom: quality=299, std dev=0.019253m|0.062208rad, update time=0.078370s
+[ INFO] [1628068215.378428539]: rtabmap (1): Rate=1.00s, Limit=0.000s, Conversion=0.0038s, RTAB-Map=0.1413s, Maps update=0.0058s pub=0.0003s (local map=1, WM=1)
+[ INFO] [1628068215.381105745]: Odom: quality=303, std dev=0.022078m|0.064474rad, update time=0.071698s
+[ INFO] [1628068215.462064126]: Odom: quality=304, std dev=0.019232m|0.055939rad, update time=0.074206s
+[ INFO] [1628068215.531277751]: Odom: quality=283, std dev=0.024658m|0.066523rad, update time=0.067744s
+[ INFO] [1628068215.615571469]: Odom: quality=352, std dev=0.025514m|0.063371rad, update time=0.082755s
+[ INFO] [1628068215.704978330]: Odom: quality=380, std dev=0.020509m|0.060330rad, update time=0.082980s
+[ INFO] [1628068215.707667710]: global_costmap: Using plugin "static_layer"
+[ INFO] [1628068215.714768026]: Requesting the map...
+[ INFO] [1628068215.758287735]: I0804 17:10:15.000000 22097 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '637636650157451377'.
+[ INFO] [1628068215.758383821]: I0804 17:10:15.000000 22097 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[ INFO] [1628068215.788592327]: Odom: quality=351, std dev=0.017553m|0.047716rad, update time=0.082288s
+[ INFO] [1628068215.852864258]: I0804 17:10:15.000000 22097 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[ INFO] [1628068215.881684115]: Odom: quality=352, std dev=0.020778m|0.056744rad, update time=0.090244s
+[ INFO] [1628068215.978547897]: Odom: quality=358, std dev=0.021873m|0.055097rad, update time=0.092474s
+[ INFO] [1628068216.060033387]: Odom: quality=335, std dev=0.021928m|0.055939rad, update time=0.078072s
+[ INFO] [1628068216.147513962]: Odom: quality=343, std dev=0.021783m|0.055097rad, update time=0.084264s
+[ INFO] [1628068216.228401219]: Odom: quality=341, std dev=0.017716m|0.051274rad, update time=0.079507s
+[ INFO] [1628068216.308400121]: Odom: quality=329, std dev=0.018226m|0.052310rad, update time=0.076513s
+[ INFO] [1628068216.316781355]: Resizing costmap to 763 X 435 at 0.020000 m/pix
+[ INFO] [1628068216.399869389]: Odom: quality=334, std dev=0.021311m|0.050171rad, update time=0.088321s
+[ INFO] [1628068216.416603772]: Received a 763 X 435 map at 0.020000 m/pix
+[ INFO] [1628068216.421109967]: global_costmap: Using plugin "obstacle_layer"
+[ INFO] [1628068216.426026326]:     Subscribed to Topics: laser_scan_sensor point_cloud2_sensor
+[ INFO] [1628068216.462043455]: global_costmap: Using plugin "inflation_layer"
+[ INFO] [1628068216.473514567]: rtabmap (2): Rate=1.00s, Limit=0.000s, Conversion=0.0022s, RTAB-Map=0.1544s, Maps update=0.0082s pub=0.0000s (local map=1, WM=1)
+[ INFO] [1628068216.508534548]: Odom: quality=305, std dev=0.024049m|0.065004rad, update time=0.104164s
+[ INFO] [1628068216.512209887]: local_costmap: Using plugin "static_layer"
+[ INFO] [1628068216.516180330]: Requesting the map...
+[ INFO] [1628068216.518194903]: Resizing static layer to 763 X 435 at 0.020000 m/pix
+[ INFO] [1628068216.614151180]: Odom: quality=338, std dev=0.021644m|0.053288rad, update time=0.104054s
+[ INFO] [1628068216.618052889]: Received a 763 X 435 map at 0.020000 m/pix
+[ INFO] [1628068216.621327868]: local_costmap: Using plugin "obstacle_layer"
+[ INFO] [1628068216.623619181]:     Subscribed to Topics: laser_scan_sensor point_cloud2_sensor
+[ WARN] [1628068216.664878077]: Costmap2DROS transform timeout. Current time: 1628068216.6648, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068216.676201707]: Created local_planner teb_local_planner/TebLocalPlannerROS
+[ INFO] [1628068216.719586585]: Odom: quality=302, std dev=0.024808m|0.067007rad, update time=0.101704s
+[ INFO] [1628068216.734481538]: Footprint model 'polygon' loaded for trajectory optimization.
+[ INFO] [1628068216.734682035]: Parallel planning in distinctive topologies enabled.
+[ INFO] [1628068216.734738159]: No costmap conversion plugin specified. All occupied costmap cells are treaten as point obstacles.
+[ INFO] [1628068216.837538462]: Odom: quality=305, std dev=0.022851m|0.052310rad, update time=0.110392s
+[ INFO] [1628068216.928795523]: Odom: quality=322, std dev=0.025543m|0.058258rad, update time=0.086253s
+[ INFO] [1628068217.019073011]: Odom: quality=302, std dev=0.020086m|0.056744rad, update time=0.086447s
+[ INFO] [1628068217.102636059]: Odom: quality=302, std dev=0.022312m|0.053288rad, update time=0.082252s
+[ INFO] [1628068217.193965486]: Odom: quality=310, std dev=0.021438m|0.055939rad, update time=0.089461s
+[ INFO] [1628068217.276050261]: Odom: quality=315, std dev=0.021649m|0.055097rad, update time=0.080844s
+[ INFO] [1628068217.371522648]: Odom: quality=280, std dev=0.022354m|0.063371rad, update time=0.093811s
+[ INFO] [1628068217.498177043]: Odom: quality=344, std dev=0.023231m|0.058973rad, update time=0.124471s
+[ WARN] [1628068217.544332733]: Graph has changed! The whole cloud is regenerated.
+[ INFO] [1628068217.545795497]: Assembled 1 obstacle and 1 ground clouds (10051 points, 0.001498s)
+[ INFO] [1628068217.546195013]: rtabmap (3): Rate=1.00s, Limit=0.000s, Conversion=0.0017s, RTAB-Map=0.1607s, Maps update=0.0102s pub=0.0019s (local map=1, WM=1)
+[ INFO] [1628068217.604203812]: Odom: quality=313, std dev=0.023990m|0.057516rad, update time=0.104018s
+[ WARN] [1628068217.664930444]: Costmap2DROS transform timeout. Current time: 1628068217.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068217.720467537]: Odom: quality=315, std dev=0.021525m|0.054216rad, update time=0.114649s
+[ INFO] [1628068217.836860735]: Odom: quality=326, std dev=0.022364m|0.064474rad, update time=0.102349s
+[ INFO] [1628068217.942359120]: Odom: quality=322, std dev=0.026055m|0.055939rad, update time=0.103264s
+[ INFO] [1628068218.044120130]: Odom: quality=319, std dev=0.022509m|0.058258rad, update time=0.100564s
+[ INFO] [1628068218.141192335]: Odom: quality=306, std dev=0.021462m|0.055097rad, update time=0.093888s
+[ INFO] [1628068218.232575630]: Odom: quality=327, std dev=0.025388m|0.060975rad, update time=0.090161s
+[ INFO] [1628068218.328329495]: Odom: quality=319, std dev=0.027138m|0.062208rad, update time=0.092159s
+[ INFO] [1628068218.412921171]: Odom: quality=326, std dev=0.024006m|0.055097rad, update time=0.082565s
+[ WARN] [1628068218.508754772]: Failed to meet update rate! Took 0.0071841590000000007249
+[ INFO] [1628068218.518025881]: Odom: quality=304, std dev=0.023231m|0.056744rad, update time=0.100655s
+[ INFO] [1628068218.556403866]: Assembled 0 obstacle and 0 ground clouds (10051 points, 0.000005s)
+[ INFO] [1628068218.556503315]: rtabmap (4): Rate=1.00s, Limit=0.000s, Conversion=0.0015s, RTAB-Map=0.1346s, Maps update=0.0071s pub=0.0001s (local map=1, WM=1)
+[ INFO] [1628068218.615697818]: Odom: quality=320, std dev=0.020773m|0.057516rad, update time=0.096014s
+[ WARN] [1628068218.665087380]: Costmap2DROS transform timeout. Current time: 1628068218.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068218.731194311]: Odom: quality=318, std dev=0.022115m|0.058258rad, update time=0.109396s
+[ INFO] [1628068218.821883568]: Odom: quality=306, std dev=0.027416m|0.062797rad, update time=0.088841s
+[ INFO] [1628068218.920045763]: Odom: quality=313, std dev=0.025082m|0.058258rad, update time=0.092406s
+[ INFO] [1628068219.010526623]: Odom: quality=312, std dev=0.024375m|0.058258rad, update time=0.087956s
+[ INFO] [1628068219.106146791]: Odom: quality=290, std dev=0.032599m|0.066523rad, update time=0.091050s
+[ INFO] [1628068219.191608982]: Odom: quality=315, std dev=0.039841m|0.067007rad, update time=0.084152s
+[ INFO] [1628068219.290713696]: Odom: quality=312, std dev=0.037099m|0.059663rad, update time=0.095270s
+[ INFO] [1628068219.385824744]: Odom: quality=292, std dev=0.040963m|0.065004rad, update time=0.093502s
+[ INFO] [1628068219.500287528]: Odom: quality=294, std dev=0.052105m|0.067480rad, update time=0.110976s
+[ INFO] [1628068219.612321791]: Odom: quality=283, std dev=0.054017m|0.072512rad, update time=0.109033s
+[ INFO] [1628068219.651107558]: Assembled 0 obstacle and 0 ground clouds (10051 points, 0.000004s)
+[ INFO] [1628068219.651311331]: rtabmap (5): Rate=1.00s, Limit=0.000s, Conversion=0.0026s, RTAB-Map=0.1411s, Maps update=0.0067s pub=0.0002s (local map=1, WM=1)
+[ INFO] [1628068219.725774295]: Odom: quality=271, std dev=0.062308m|0.074679rad, update time=0.110159s
+[ INFO] [1628068219.842641726]: Odom: quality=272, std dev=0.069709m|0.072512rad, update time=0.111398s
+[ WARN] [1628068219.864923151]: Costmap2DROS transform timeout. Current time: 1628068219.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068219.944628678]: Odom: quality=287, std dev=0.055487m|0.072512rad, update time=0.097994s
+[ INFO] [1628068220.047214405]: Odom: quality=264, std dev=0.050382m|0.067944rad, update time=0.100869s
+[ INFO] [1628068220.150749890]: Odom: quality=288, std dev=0.065279m|0.067007rad, update time=0.100061s
+[ INFO] [1628068220.258321935]: Odom: quality=196, std dev=0.076382m|0.072512rad, update time=0.105334s
+[ INFO] [1628068220.385246093]: Odom: quality=161, std dev=0.088418m|0.080248rad, update time=0.114221s
+[ INFO] [1628068220.502556135]: Odom: quality=236, std dev=0.087104m|0.070952rad, update time=0.114767s
+[ INFO] [1628068220.621032521]: Odom: quality=241, std dev=0.082594m|0.068399rad, update time=0.116634s
+[ INFO] [1628068220.656036375]: Assembled 1 obstacle and 1 ground clouds (14514 points, 0.002676s)
+[ INFO] [1628068220.656574721]: rtabmap (6): Rate=1.00s, Limit=0.000s, Conversion=0.0016s, RTAB-Map=0.1394s, Maps update=0.0096s pub=0.0032s (local map=2, WM=2)
+[ INFO] [1628068220.740908465]: Odom: quality=252, std dev=0.084851m|0.074679rad, update time=0.118655s
+[ INFO] [1628068220.854757725]: Odom: quality=244, std dev=0.081401m|0.072887rad, update time=0.112466s
+[ WARN] [1628068220.864931803]: Costmap2DROS transform timeout. Current time: 1628068220.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068220.958816583]: Odom: quality=231, std dev=0.078435m|0.067480rad, update time=0.100970s
+[ INFO] [1628068221.076512041]: Odom: quality=223, std dev=0.084726m|0.076672rad, update time=0.115433s
+[ INFO] [1628068221.198027918]: Odom: quality=210, std dev=0.076320m|0.079968rad, update time=0.118337s
+[ INFO] [1628068221.312080582]: Odom: quality=245, std dev=0.090768m|0.076025rad, update time=0.112550s
+[ INFO] [1628068221.412973129]: Odom: quality=264, std dev=0.060381m|0.075695rad, update time=0.097557s
+[ INFO] [1628068221.521792628]: Odom: quality=183, std dev=0.092520m|0.082131rad, update time=0.106174s
+[ INFO] [1628068221.629743977]: Odom: quality=226, std dev=0.081279m|0.074331rad, update time=0.104244s
+[ INFO] [1628068221.679459323]: Assembled 1 obstacle and 1 ground clouds (18364 points, 0.002126s)
+[ INFO] [1628068221.680157075]: rtabmap (7): Rate=1.00s, Limit=0.000s, Conversion=0.0013s, RTAB-Map=0.1437s, Maps update=0.0103s pub=0.0028s (local map=3, WM=3)
+[ INFO] [1628068221.739534046]: Odom: quality=218, std dev=0.071183m|0.074679rad, update time=0.104786s
+[ INFO] [1628068221.851944449]: Odom: quality=175, std dev=0.076538m|0.084852rad, update time=0.110025s
+[ WARN] [1628068221.865011045]: Costmap2DROS transform timeout. Current time: 1628068221.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068221.954055529]: Odom: quality=156, std dev=0.070176m|0.087117rad, update time=0.099774s
+[ INFO] [1628068222.072166711]: Odom: quality=206, std dev=0.078335m|0.083893rad, update time=0.116404s
+[ INFO] [1628068222.169570557]: Odom: quality=226, std dev=0.064922m|0.077304rad, update time=0.094201s
+[ INFO] [1628068222.271322166]: Odom: quality=223, std dev=0.088213m|0.083152rad, update time=0.099831s
+[ INFO] [1628068222.363065166]: Odom: quality=227, std dev=0.077555m|0.075023rad, update time=0.088529s
+[ INFO] [1628068222.465600367]: Odom: quality=144, std dev=0.076208m|0.075361rad, update time=0.099040s
+[ INFO] [1628068222.552773396]: Odom: quality=192, std dev=0.080357m|0.085779rad, update time=0.085679s
+[ INFO] [1628068222.677211163]: Odom: quality=134, std dev=0.098549m|0.089820rad, update time=0.122534s
+[ INFO] [1628068222.719979452]: Assembled 1 obstacle and 1 ground clouds (21721 points, 0.003397s)
+[ INFO] [1628068222.721714969]: rtabmap (8): Rate=1.00s, Limit=0.000s, Conversion=0.0018s, RTAB-Map=0.1547s, Maps update=0.0070s pub=0.0051s (local map=4, WM=4)
+[ INFO] [1628068222.795808613]: Odom: quality=152, std dev=0.083325m|0.087763rad, update time=0.115167s
+[ INFO] [1628068222.913277208]: Odom: quality=162, std dev=0.064739m|0.078521rad, update time=0.109313s
+[ INFO] [1628068223.019187366]: Odom: quality=168, std dev=0.070352m|0.082900rad, update time=0.101281s
+[ WARN] [1628068223.064936534]: Costmap2DROS transform timeout. Current time: 1628068223.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068223.065443508]: I0804 17:10:23.000000 22128 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068223.065515757]: I0804 17:10:23.000000 22128 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068223.065560327]: I0804 17:10:23.000000 22128 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1628068223.126016799]: Odom: quality=205, std dev=0.085322m|0.077613rad, update time=0.103716s
+[ INFO] [1628068223.219534075]: Odom: quality=229, std dev=0.066663m|0.076672rad, update time=0.089508s
+[ INFO] [1628068223.309357134]: Odom: quality=217, std dev=0.077543m|0.079109rad, update time=0.088429s
+[ INFO] [1628068223.407693243]: Odom: quality=196, std dev=0.069253m|0.080525rad, update time=0.094673s
+[ INFO] [1628068223.519229374]: Odom: quality=129, std dev=0.072743m|0.095098rad, update time=0.110219s
+[ INFO] [1628068223.628090805]: Odom: quality=161, std dev=0.101200m|0.087549rad, update time=0.105457s
+[ INFO] [1628068223.770853517]: Odom: quality=176, std dev=0.091382m|0.079685rad, update time=0.139897s
+[ WARN] [1628068223.781806270]: Failed to meet update rate! Took 0.0068631020000000002648
+[ INFO] [1628068223.832415436]: Assembled 1 obstacle and 1 ground clouds (25393 points, 0.003539s)
+[ INFO] [1628068223.832967656]: rtabmap (9): Rate=1.00s, Limit=0.000s, Conversion=0.0023s, RTAB-Map=0.1867s, Maps update=0.0116s pub=0.0041s (local map=5, WM=5)
+[ INFO] [1628068223.893360712]: Odom: quality=218, std dev=0.071981m|0.081606rad, update time=0.118368s
+[ INFO] [1628068224.017690436]: Odom: quality=222, std dev=0.058531m|0.079109rad, update time=0.122830s
+[ WARN] [1628068224.064946522]: Costmap2DROS transform timeout. Current time: 1628068224.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068224.140757004]: Odom: quality=151, std dev=0.083085m|0.086678rad, update time=0.118531s
+[ INFO] [1628068224.256442355]: Odom: quality=174, std dev=0.061774m|0.080525rad, update time=0.112097s
+[ INFO] [1628068224.373653673]: Odom: quality=259, std dev=0.052004m|0.071352rad, update time=0.113329s
+[ INFO] [1628068224.494060626]: Odom: quality=158, std dev=0.072540m|0.086007rad, update time=0.118922s
+[ INFO] [1628068224.619795271]: Odom: quality=126, std dev=0.085151m|0.088395rad, update time=0.120332s
+[ INFO] [1628068224.729494738]: Odom: quality=138, std dev=0.072386m|0.087117rad, update time=0.107945s
+[ INFO] [1628068224.876247548]: Odom: quality=155, std dev=0.067977m|0.077613rad, update time=0.138532s
+[ INFO] [1628068224.930210957]: Assembled 1 obstacle and 1 ground clouds (28727 points, 0.004621s)
+[ INFO] [1628068224.930906500]: rtabmap (10): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.1831s, Maps update=0.0091s pub=0.0053s (local map=6, WM=6)
+[ INFO] [1628068225.042161137]: Odom: quality=116, std dev=0.077815m|0.086898rad, update time=0.161351s
+[ WARN] [1628068225.064967206]: Costmap2DROS transform timeout. Current time: 1628068225.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068225.173776484]: Odom: quality=154, std dev=0.080845m|0.082646rad, update time=0.128278s
+[ INFO] [1628068225.283278418]: Odom: quality=234, std dev=0.048445m|0.073620rad, update time=0.107916s
+[ INFO] [1628068225.391639161]: Odom: quality=199, std dev=0.052842m|0.073978rad, update time=0.104699s
+[ INFO] [1628068225.516179727]: Odom: quality=154, std dev=0.056385m|0.085550rad, update time=0.122938s
+[ INFO] [1628068225.637801272]: Odom: quality=200, std dev=0.069132m|0.090214rad, update time=0.116831s
+[ INFO] [1628068225.745941475]: Odom: quality=150, std dev=0.061652m|0.081870rad, update time=0.104923s
+[ INFO] [1628068225.916140515]: Odom: quality=63, std dev=0.039490m|0.094078rad, update time=0.163889s
+[ INFO] [1628068226.008419266]: Assembled 1 obstacle and 1 ground clouds (31787 points, 0.008836s)
+[ INFO] [1628068226.009454862]: rtabmap (11): Rate=1.00s, Limit=0.000s, Conversion=0.0016s, RTAB-Map=0.2424s, Maps update=0.0093s pub=0.0099s (local map=7, WM=7)
+[ WARN] [1628068226.065022754]: Costmap2DROS transform timeout. Current time: 1628068226.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068226.078740979]: Odom: quality=115, std dev=0.104873m|0.083648rad, update time=0.159643s
+[ INFO] [1628068226.213229698]: Odom: quality=231, std dev=0.035244m|0.083401rad, update time=0.129221s
+[ INFO] [1628068226.339104737]: Odom: quality=134, std dev=0.037860m|0.088186rad, update time=0.122932s
+[ INFO] [1628068226.462907149]: Odom: quality=194, std dev=0.027836m|0.079685rad, update time=0.122104s
+[ INFO] [1628068226.590866681]: Odom: quality=186, std dev=0.035557m|0.084615rad, update time=0.126195s
+[ INFO] [1628068226.722131821]: Odom: quality=219, std dev=0.027007m|0.084852rad, update time=0.127112s
+[ INFO] [1628068226.842763154]: Odom: quality=203, std dev=0.048610m|0.093378rad, update time=0.118832s
+[ INFO] [1628068226.976686867]: Odom: quality=210, std dev=0.034848m|0.088603rad, update time=0.129054s
+[ INFO] [1628068227.078527152]: Assembled 1 obstacle and 1 ground clouds (35245 points, 0.007416s)
+[ INFO] [1628068227.081321618]: rtabmap (12): Rate=1.00s, Limit=0.000s, Conversion=0.0016s, RTAB-Map=0.2136s, Maps update=0.0128s pub=0.0103s (local map=8, WM=8)
+[ INFO] [1628068227.132898782]: Odom: quality=209, std dev=0.037206m|0.089217rad, update time=0.154271s
+[ WARN] [1628068227.264927505]: Costmap2DROS transform timeout. Current time: 1628068227.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068227.286949909]: Odom: quality=201, std dev=0.050134m|0.087549rad, update time=0.143374s
+[ INFO] [1628068227.412583679]: Odom: quality=233, std dev=0.033510m|0.079109rad, update time=0.123883s
+[ INFO] [1628068227.524116696]: Odom: quality=263, std dev=0.031859m|0.080248rad, update time=0.107390s
+[ INFO] [1628068227.634031294]: Odom: quality=149, std dev=0.080556m|0.086232rad, update time=0.108199s
+[ INFO] [1628068227.742247468]: Odom: quality=99, std dev=0.054046m|0.092115rad, update time=0.105097s
+[ INFO] [1628068227.848395439]: Odom: quality=142, std dev=0.131064m|0.084136rad, update time=0.104761s
+[ INFO] [1628068227.986584727]: Odom: quality=200, std dev=0.072399m|0.080525rad, update time=0.134004s
+[ INFO] [1628068228.063084334]: Assembled 1 obstacle and 1 ground clouds (39088 points, 0.008664s)
+[ INFO] [1628068228.063978865]: rtabmap (13): Rate=1.00s, Limit=0.000s, Conversion=0.0032s, RTAB-Map=0.1897s, Maps update=0.0128s pub=0.0096s (local map=9, WM=9)
+[ INFO] [1628068228.108335488]: Odom: quality=252, std dev=0.067246m|0.076672rad, update time=0.116414s
+[ INFO] [1628068228.239388095]: Odom: quality=258, std dev=0.062094m|0.079968rad, update time=0.124576s
+[ WARN] [1628068228.264979655]: Costmap2DROS transform timeout. Current time: 1628068228.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068228.280371497]: I0804 17:10:28.000000 22097 collated_trajectory_builder.cc:81] scan rate: 13.64 Hz 7.33e-02 s +/- 4.69e-03 s (pulsed at 100.10% real time)
+[ INFO] [1628068228.363563502]: Odom: quality=294, std dev=0.080825m|0.076672rad, update time=0.120202s
+[ INFO] [1628068228.478026183]: Odom: quality=327, std dev=0.054051m|0.076025rad, update time=0.110549s
+[ INFO] [1628068228.577232725]: Odom: quality=331, std dev=0.079727m|0.073620rad, update time=0.095430s
+[ INFO] [1628068228.682080860]: Odom: quality=332, std dev=0.062966m|0.078521rad, update time=0.103273s
+[ INFO] [1628068228.792710703]: Odom: quality=310, std dev=0.072036m|0.075695rad, update time=0.105131s
+[ INFO] [1628068228.887062884]: Odom: quality=306, std dev=0.077247m|0.074331rad, update time=0.092807s
+[ INFO] [1628068229.001570527]: Odom: quality=305, std dev=0.068172m|0.070132rad, update time=0.110251s
+[ WARN] [1628068229.018766734]: Failed to meet update rate! Took 0.0071871000000000000857
+[ INFO] [1628068229.092931818]: Assembled 1 obstacle and 1 ground clouds (42312 points, 0.008354s)
+[ INFO] [1628068229.094201094]: rtabmap (14): Rate=1.00s, Limit=0.000s, Conversion=0.0014s, RTAB-Map=0.1843s, Maps update=0.0116s pub=0.0096s (local map=10, WM=10)
+[ INFO] [1628068229.150119472]: Odom: quality=291, std dev=0.084520m|0.072512rad, update time=0.144810s
+[ WARN] [1628068229.265040315]: Costmap2DROS transform timeout. Current time: 1628068229.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068229.333285791]: Odom: quality=386, std dev=0.058589m|0.082390rad, update time=0.176592s
+[ INFO] [1628068229.345475057]: I0804 17:10:29.000000 22128 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068229.345556938]: I0804 17:10:29.000000 22128 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068229.345603309]: I0804 17:10:29.000000 22128 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+ 04/08 17:10:29,353 ERROR [140159915898624] (ds5-options.cpp:88) Asic Temperature value is not valid!
+[ INFO] [1628068229.486667847]: Odom: quality=366, std dev=0.057730m|0.082646rad, update time=0.151136s
+[ INFO] [1628068229.687690782]: Odom: quality=366, std dev=0.051337m|0.079399rad, update time=0.189432s
+[ INFO] [1628068229.867490821]: Odom: quality=381, std dev=0.048438m|0.075023rad, update time=0.173964s
+[ INFO] [1628068229.999298180]: Odom: quality=376, std dev=0.059603m|0.078521rad, update time=0.126901s
+[ INFO] [1628068230.171256049]: Odom: quality=368, std dev=0.049085m|0.073256rad, update time=0.163718s
+ 04/08 17:10:30,296 ERROR [140160134010624] (ds5-options.cpp:88) Asic Temperature value is not valid!
+[ INFO] [1628068230.322723481]: Assembled 0 obstacle and 0 ground clouds (42312 points, 0.000009s)
+[ INFO] [1628068230.322854976]: rtabmap (15): Rate=1.00s, Limit=0.000s, Conversion=0.0054s, RTAB-Map=0.3061s, Maps update=0.0116s pub=0.0002s (local map=10, WM=10)
+[ INFO] [1628068230.333857541]: Odom: quality=378, std dev=0.065347m|0.078521rad, update time=0.157475s
+ 04/08 17:10:30,356 ERROR [140159915898624] (ds5-options.cpp:88) Asic Temperature value is not valid!
+[ INFO] [1628068230.454237441]: Odom: quality=361, std dev=0.060489m|0.076351rad, update time=0.117089s
+[ WARN] [1628068230.465024065]: Costmap2DROS transform timeout. Current time: 1628068230.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068230.592796941]: Odom: quality=351, std dev=0.069501m|0.079109rad, update time=0.132661s
+[ INFO] [1628068230.715107022]: Odom: quality=322, std dev=0.075788m|0.085550rad, update time=0.117832s
+[ INFO] [1628068230.850590158]: Odom: quality=357, std dev=0.056237m|0.078222rad, update time=0.128271s
+[ INFO] [1628068230.977426214]: Odom: quality=320, std dev=0.097581m|0.087975rad, update time=0.122438s
+[ INFO] [1628068231.115028198]: Odom: quality=341, std dev=0.074648m|0.074331rad, update time=0.127699s
+[ WARN] [1628068231.132457089]: Failed to meet update rate! Took 0.0075328150000000008643
+[ INFO] [1628068231.199370409]: Assembled 0 obstacle and 0 ground clouds (42312 points, 0.000010s)
+[ INFO] [1628068231.199505025]: rtabmap (16): Rate=1.00s, Limit=0.000s, Conversion=0.0029s, RTAB-Map=0.2089s, Maps update=0.0097s pub=0.0002s (local map=10, WM=10)
+[ INFO] [1628068231.250261319]: Odom: quality=321, std dev=0.092757m|0.085779rad, update time=0.133237s
+ 04/08 17:10:31,359 ERROR [140159915898624] (ds5-options.cpp:88) Asic Temperature value is not valid!
+[ INFO] [1628068231.398393569]: Odom: quality=270, std dev=0.109658m|0.080525rad, update time=0.141313s
+[ INFO] [1628068231.531757288]: Odom: quality=322, std dev=0.072767m|0.083893rad, update time=0.125970s
+[ WARN] [1628068231.664955948]: Costmap2DROS transform timeout. Current time: 1628068231.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068231.666303167]: Odom: quality=259, std dev=0.088016m|0.081870rad, update time=0.128168s
+[ INFO] [1628068231.788238847]: Odom: quality=218, std dev=0.089669m|0.084615rad, update time=0.118279s
+[ INFO] [1628068231.905457842]: Odom: quality=245, std dev=0.109197m|0.092662rad, update time=0.113124s
+[ INFO] [1628068231.955463487]: I0804 17:10:31.000000 22097 pose_graph_2d.cc:148] Inserted submap (0, 1).
+[ INFO] [1628068232.051623206]: Odom: quality=248, std dev=0.118319m|0.088186rad, update time=0.141763s
+[ INFO] [1628068232.223706213]: Odom: quality=155, std dev=0.114954m|0.091557rad, update time=0.164920s
+[ INFO] [1628068232.313809795]: Assembled 1 obstacle and 1 ground clouds (45549 points, 0.008658s)
+[ INFO] [1628068232.315427095]: rtabmap (17): Rate=1.00s, Limit=0.000s, Conversion=0.0019s, RTAB-Map=0.2383s, Maps update=0.0130s pub=0.0103s (local map=11, WM=11)
+[ INFO] [1628068232.384685884]: Odom: quality=133, std dev=0.080733m|0.091557rad, update time=0.154920s
+[ INFO] [1628068232.560493592]: Odom: quality=146, std dev=0.134240m|0.095925rad, update time=0.168556s
+[ INFO] [1628068232.696005583]: Odom: quality=189, std dev=0.079991m|0.085319rad, update time=0.133465s
+[ INFO] [1628068232.833548776]: Odom: quality=171, std dev=0.134529m|0.089419rad, update time=0.131703s
+[ WARN] [1628068232.864946766]: Costmap2DROS transform timeout. Current time: 1628068232.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068232.977284219]: Odom: quality=106, std dev=0.110994m|0.087117rad, update time=0.138140s
+[ INFO] [1628068233.131242298]: Odom: quality=134, std dev=0.093564m|0.093378rad, update time=0.140070s
+[ INFO] [1628068233.327613427]: Odom: quality=190, std dev=0.114572m|0.081071rad, update time=0.188418s
+[ WARN] [1628068233.338409431]: Failed to meet update rate! Took 0.0068192170000000006808
+[ INFO] [1628068233.416869217]: Assembled 1 obstacle and 1 ground clouds (49405 points, 0.012212s)
+[ INFO] [1628068233.419041657]: rtabmap (18): Rate=1.00s, Limit=0.000s, Conversion=0.0022s, RTAB-Map=0.2594s, Maps update=0.0114s pub=0.0144s (local map=12, WM=12)
+[ INFO] [1628068233.480252071]: Odom: quality=147, std dev=0.101127m|0.080525rad, update time=0.150744s
+[ INFO] [1628068233.626701560]: Odom: quality=200, std dev=0.067949m|0.084852rad, update time=0.140949s
+[ INFO] [1628068233.772302128]: Odom: quality=196, std dev=0.094340m|0.087549rad, update time=0.142768s
+[ WARN] [1628068233.865079581]: Costmap2DROS transform timeout. Current time: 1628068233.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068233.900168854]: Odom: quality=216, std dev=0.073972m|0.077920rad, update time=0.123362s
+[ INFO] [1628068234.047609672]: Odom: quality=99, std dev=0.126237m|0.094250rad, update time=0.144257s
+[ INFO] [1628068234.203049433]: Odom: quality=148, std dev=0.129578m|0.083401rad, update time=0.146211s
+[ INFO] [1628068234.378358990]: Odom: quality=185, std dev=0.064498m|0.075695rad, update time=0.169706s
+[ INFO] [1628068234.453234039]: Assembled 1 obstacle and 1 ground clouds (53536 points, 0.012308s)
+[ INFO] [1628068234.458109910]: rtabmap (19): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.2190s, Maps update=0.0137s pub=0.0173s (local map=13, WM=13)
+[ INFO] [1628068234.551878154]: Odom: quality=178, std dev=0.084455m|0.083401rad, update time=0.165256s
+[ INFO] [1628068234.666210259]: I0804 17:10:34.000000 22127 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068234.666288258]: I0804 17:10:34.000000 22127 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068234.666345133]: I0804 17:10:34.000000 22127 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1628068234.698367816]: Odom: quality=151, std dev=0.118029m|0.091557rad, update time=0.144070s
+[ INFO] [1628068234.853555573]: Odom: quality=106, std dev=0.139368m|0.099181rad, update time=0.150554s
+[ INFO] [1628068235.006903850]: Odom: quality=145, std dev=0.117068m|0.092843rad, update time=0.147420s
+[ WARN] [1628068235.064940386]: Costmap2DROS transform timeout. Current time: 1628068235.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068235.161485439]: Odom: quality=98, std dev=0.092864m|0.092298rad, update time=0.138390s
+[ INFO] [1628068235.358463060]: Odom: quality=140, std dev=0.103687m|0.096249rad, update time=0.188999s
+[ INFO] [1628068235.466066219]: Assembled 1 obstacle and 1 ground clouds (57517 points, 0.011597s)
+[ INFO] [1628068235.467852932]: rtabmap (20): Rate=1.00s, Limit=0.000s, Conversion=0.0025s, RTAB-Map=0.2784s, Maps update=0.0117s pub=0.0134s (local map=14, WM=14)
+[ INFO] [1628068235.515052504]: Odom: quality=160, std dev=0.063943m|0.080525rad, update time=0.150888s
+[ INFO] [1628068235.643291111]: Odom: quality=231, std dev=0.053523m|0.076672rad, update time=0.125678s
+[ INFO] [1628068235.806064264]: Odom: quality=163, std dev=0.082727m|0.089419rad, update time=0.160139s
+[ INFO] [1628068235.940644737]: Odom: quality=174, std dev=0.120290m|0.092481rad, update time=0.127061s
+[ WARN] [1628068236.064984121]: Costmap2DROS transform timeout. Current time: 1628068236.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068236.097585572]: Odom: quality=116, std dev=0.144068m|0.088809rad, update time=0.152798s
+[ INFO] [1628068236.265869594]: Odom: quality=178, std dev=0.170510m|0.098585rad, update time=0.158345s
+[ INFO] [1628068236.433648491]: Odom: quality=161, std dev=0.109417m|0.089620rad, update time=0.165454s
+[ INFO] [1628068236.540918129]: Assembled 1 obstacle and 1 ground clouds (61361 points, 0.009604s)
+[ INFO] [1628068236.543933106]: rtabmap (21): Rate=1.00s, Limit=0.000s, Conversion=0.0018s, RTAB-Map=0.2484s, Maps update=0.0148s pub=0.0126s (local map=15, WM=15)
+[ INFO] [1628068236.598230768]: Odom: quality=182, std dev=0.096220m|0.089014rad, update time=0.157161s
+[ INFO] [1628068236.755556608]: Odom: quality=177, std dev=0.067782m|0.084377rad, update time=0.154922s
+[ INFO] [1628068236.929560939]: Odom: quality=204, std dev=0.070536m|0.086898rad, update time=0.170773s
+[ WARN] [1628068237.065007830]: Costmap2DROS transform timeout. Current time: 1628068237.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068237.103899741]: Odom: quality=241, std dev=0.096378m|0.086232rad, update time=0.165502s
+[ INFO] [1628068237.278083162]: Odom: quality=208, std dev=0.077556m|0.091179rad, update time=0.170946s
+[ INFO] [1628068237.465412932]: Odom: quality=202, std dev=0.099781m|0.090797rad, update time=0.180222s
+[ INFO] [1628068237.696762078]: Odom: quality=229, std dev=0.116170m|0.085319rad, update time=0.226658s
+[ INFO] [1628068237.800778247]: Assembled 1 obstacle and 1 ground clouds (65129 points, 0.016634s)
+[ INFO] [1628068237.805778078]: rtabmap (22): Rate=1.00s, Limit=0.000s, Conversion=0.0032s, RTAB-Map=0.2990s, Maps update=0.0162s pub=0.0216s (local map=16, WM=16)
+[ INFO] [1628068237.928751251]: Odom: quality=161, std dev=0.071352m|0.095265rad, update time=0.224045s
+[ INFO] [1628068238.118638176]: Odom: quality=191, std dev=0.081642m|0.083648rad, update time=0.186004s
+[ WARN] [1628068238.265075919]: Costmap2DROS transform timeout. Current time: 1628068238.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068238.311400579]: Odom: quality=202, std dev=0.075121m|0.085319rad, update time=0.183356s
+[ INFO] [1628068238.523976023]: Odom: quality=139, std dev=0.114173m|0.102280rad, update time=0.209274s
+[ INFO] [1628068238.739192543]: Odom: quality=135, std dev=0.099622m|0.099911rad, update time=0.201077s
+[ INFO] [1628068238.842337494]: Assembled 1 obstacle and 1 ground clouds (69099 points, 0.017682s)
+[ INFO] [1628068238.847472394]: rtabmap (23): Rate=1.00s, Limit=0.000s, Conversion=0.0028s, RTAB-Map=0.2794s, Maps update=0.0179s pub=0.0229s (local map=17, WM=17)
+[ INFO] [1628068238.939390333]: Odom: quality=200, std dev=0.045470m|0.083648rad, update time=0.190794s
+[ INFO] [1628068239.172158494]: Odom: quality=208, std dev=0.045782m|0.081870rad, update time=0.229694s
+[ INFO] [1628068239.383029081]: Odom: quality=160, std dev=0.055488m|0.086898rad, update time=0.201884s
+[ WARN] [1628068239.465023029]: Costmap2DROS transform timeout. Current time: 1628068239.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068239.590418978]: Odom: quality=191, std dev=0.045402m|0.083152rad, update time=0.203526s
+[ INFO] [1628068239.816533755]: Odom: quality=155, std dev=0.058068m|0.105120rad, update time=0.216407s
+[ INFO] [1628068239.920615627]: Assembled 1 obstacle and 1 ground clouds (73471 points, 0.022364s)
+[ INFO] [1628068239.924947452]: rtabmap (24): Rate=1.00s, Limit=0.000s, Conversion=0.0049s, RTAB-Map=0.2836s, Maps update=0.0187s pub=0.0267s (local map=18, WM=18)
+[ INFO] [1628068240.013326455]: I0804 17:10:40.000000 22126 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068240.013492493]: I0804 17:10:40.000000 22126 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068240.013553696]: I0804 17:10:40.000000 22126 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1628068240.026672161]: Odom: quality=132, std dev=0.042475m|0.086007rad, update time=0.197208s
+[ INFO] [1628068240.237957092]: Odom: quality=143, std dev=0.046818m|0.087117rad, update time=0.204762s
+[ INFO] [1628068240.445780328]: Odom: quality=150, std dev=0.037965m|0.093904rad, update time=0.204724s
+[ INFO] [1628068240.645536199]: Odom: quality=125, std dev=0.034651m|0.090604rad, update time=0.196975s
+[ WARN] [1628068240.664983456]: Costmap2DROS transform timeout. Current time: 1628068240.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068240.855899215]: Odom: quality=126, std dev=0.043483m|0.093201rad, update time=0.206744s
+[ INFO] [1628068241.003293524]: Assembled 1 obstacle and 1 ground clouds (78385 points, 0.019714s)
+[ INFO] [1628068241.010136028]: rtabmap (25): Rate=1.00s, Limit=0.000s, Conversion=0.0029s, RTAB-Map=0.3138s, Maps update=0.0210s pub=0.0266s (local map=19, WM=19)
+[ INFO] [1628068241.067452400]: Odom: quality=160, std dev=0.029877m|0.087117rad, update time=0.208505s
+[ INFO] [1628068241.266679559]: Odom: quality=139, std dev=0.079643m|0.086007rad, update time=0.190148s
+[ INFO] [1628068241.464663157]: Odom: quality=116, std dev=0.034755m|0.089217rad, update time=0.194838s
+[ INFO] [1628068241.668180767]: Odom: quality=129, std dev=0.052399m|0.090989rad, update time=0.193981s
+[ WARN] [1628068241.864986392]: Costmap2DROS transform timeout. Current time: 1628068241.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068241.866493356]: Odom: quality=149, std dev=0.053994m|0.083648rad, update time=0.194045s
+[ INFO] [1628068242.041122447]: Assembled 1 obstacle and 1 ground clouds (83129 points, 0.022792s)
+[ INFO] [1628068242.045377522]: rtabmap (26): Rate=1.00s, Limit=0.000s, Conversion=0.0035s, RTAB-Map=0.3299s, Maps update=0.0163s pub=0.0270s (local map=20, WM=20)
+[ INFO] [1628068242.082248064]: Odom: quality=151, std dev=0.032473m|0.080800rad, update time=0.208606s
+[ INFO] [1628068242.274565995]: Odom: quality=126, std dev=0.056282m|0.090018rad, update time=0.188920s
+[ INFO] [1628068242.470146230]: Odom: quality=124, std dev=0.044736m|0.090214rad, update time=0.188371s
+[ INFO] [1628068242.665247153]: Odom: quality=142, std dev=0.049509m|0.086232rad, update time=0.191964s
+[ WARN] [1628068242.864998806]: Costmap2DROS transform timeout. Current time: 1628068242.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068242.874643226]: Odom: quality=121, std dev=0.060765m|0.100341rad, update time=0.200583s
+[ INFO] [1628068243.070125355]: Odom: quality=157, std dev=0.059345m|0.087549rad, update time=0.192580s
+[ INFO] [1628068243.283568771]: Odom: quality=160, std dev=0.045054m|0.088186rad, update time=0.206052s
+[ INFO] [1628068243.314990680]: I0804 17:10:43.000000 22097 collated_trajectory_builder.cc:81] scan rate: 13.76 Hz 7.27e-02 s +/- 2.75e-03 s (pulsed at 100.00% real time)
+[ INFO] [1628068243.364575911]: Assembled 1 obstacle and 1 ground clouds (87590 points, 0.021807s)
+[ INFO] [1628068243.368458318]: rtabmap (27): Rate=1.00s, Limit=0.000s, Conversion=0.0025s, RTAB-Map=0.6463s, Maps update=0.0283s pub=0.0257s (local map=21, WM=21)
+[ INFO] [1628068243.488757731]: Odom: quality=156, std dev=0.048748m|0.081340rad, update time=0.201903s
+[ INFO] [1628068243.687051173]: Odom: quality=136, std dev=0.056171m|0.085550rad, update time=0.191633s
+[ INFO] [1628068243.899878178]: Odom: quality=129, std dev=0.066992m|0.090989rad, update time=0.206868s
+[ INFO] [1628068244.033760709]: Assembled 1 obstacle and 1 ground clouds (93280 points, 0.026384s)
+[ INFO] [1628068244.043622497]: rtabmap (28): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.2969s, Maps update=0.0188s pub=0.0363s (local map=22, WM=22)
+[ WARN] [1628068244.064958571]: Costmap2DROS transform timeout. Current time: 1628068244.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068244.102821061]: Odom: quality=122, std dev=0.061733m|0.089217rad, update time=0.192681s
+[ INFO] [1628068244.278887258]: Odom: quality=159, std dev=0.056690m|0.078521rad, update time=0.173201s
+[ INFO] [1628068244.500158476]: Odom: quality=103, std dev=0.075972m|0.086898rad, update time=0.209849s
+[ INFO] [1628068244.697256676]: Odom: quality=129, std dev=0.072905m|0.090989rad, update time=0.194152s
+[ INFO] [1628068244.895135421]: Odom: quality=176, std dev=0.063339m|0.083648rad, update time=0.188016s
+[ INFO] [1628068245.034058327]: Assembled 1 obstacle and 1 ground clouds (98117 points, 0.024899s)
+[ INFO] [1628068245.038613049]: rtabmap (29): Rate=1.00s, Limit=0.000s, Conversion=0.0043s, RTAB-Map=0.2907s, Maps update=0.0165s pub=0.0295s (local map=23, WM=23)
+[ WARN] [1628068245.064968430]: Costmap2DROS transform timeout. Current time: 1628068245.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068245.131463006]: Odom: quality=159, std dev=0.051724m|0.086898rad, update time=0.233068s
+[ INFO] [1628068245.343450999]: Odom: quality=143, std dev=0.078653m|0.088603rad, update time=0.203192s
+[ INFO] [1628068245.459036128]: I0804 17:10:45.000000 22128 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068245.459119349]: I0804 17:10:45.000000 22128 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068245.459175097]: I0804 17:10:45.000000 22128 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1628068245.537523811]: Odom: quality=143, std dev=0.059570m|0.089217rad, update time=0.189959s
+[ INFO] [1628068245.674978833]: I0804 17:10:45.000000 22097 pose_graph_2d.cc:148] Inserted submap (0, 2).
+[ INFO] [1628068245.728576660]: Odom: quality=131, std dev=0.066607m|0.095761rad, update time=0.183983s
+[ INFO] [1628068245.934838998]: Odom: quality=145, std dev=0.055738m|0.086232rad, update time=0.202353s
+[ WARN] [1628068246.065016462]: Costmap2DROS transform timeout. Current time: 1628068246.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068246.068601858]: Assembled 1 obstacle and 1 ground clouds (102058 points, 0.030552s)
+[ INFO] [1628068246.074086035]: rtabmap (30): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.2882s, Maps update=0.0174s pub=0.0360s (local map=24, WM=24)
+[ INFO] [1628068246.143644748]: Odom: quality=77, std dev=0.078318m|0.100055rad, update time=0.197886s
+[ INFO] [1628068246.332651980]: Odom: quality=107, std dev=0.066901m|0.096730rad, update time=0.186551s
+[ INFO] [1628068246.560540507]: Odom: quality=140, std dev=0.055449m|0.092115rad, update time=0.220680s
+[ INFO] [1628068246.781218408]: Odom: quality=126, std dev=0.072159m|0.090410rad, update time=0.216052s
+[ INFO] [1628068246.982137903]: Odom: quality=121, std dev=0.096916m|0.088395rad, update time=0.189064s
+[ WARN] [1628068247.065024556]: Costmap2DROS transform timeout. Current time: 1628068247.0650, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068247.117304800]: Assembled 1 obstacle and 1 ground clouds (105433 points, 0.022271s)
+[ INFO] [1628068247.124854022]: rtabmap (31): Rate=1.00s, Limit=0.000s, Conversion=0.0052s, RTAB-Map=0.2943s, Maps update=0.0137s pub=0.0298s (local map=25, WM=25)
+[ INFO] [1628068247.205900274]: Odom: quality=164, std dev=0.059057m|0.085319rad, update time=0.217004s
+[ INFO] [1628068247.406369271]: Odom: quality=73, std dev=0.076353m|0.095098rad, update time=0.197682s
+[ INFO] [1628068247.602530163]: Odom: quality=108, std dev=0.078133m|0.106338rad, update time=0.187444s
+[ INFO] [1628068247.769837079]: Odom: quality=87, std dev=0.051782m|0.090018rad, update time=0.164452s
+[ INFO] [1628068248.034423166]: Odom: quality=135, std dev=0.047526m|0.091179rad, update time=0.250588s
+[ INFO] [1628068248.191417174]: Assembled 1 obstacle and 1 ground clouds (111465 points, 0.026108s)
+[ INFO] [1628068248.197675923]: rtabmap (32): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.3758s, Maps update=0.0159s pub=0.0324s (local map=26, WM=26)
+[ INFO] [1628068248.244334165]: Odom: quality=154, std dev=0.053031m|0.089014rad, update time=0.206503s
+[ WARN] [1628068248.264988605]: Costmap2DROS transform timeout. Current time: 1628068248.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068248.458932621]: Odom: quality=115, std dev=0.060283m|0.091744rad, update time=0.206306s
+[ INFO] [1628068248.683766188]: Odom: quality=92, std dev=0.069464m|0.094078rad, update time=0.221888s
+[ INFO] [1628068248.914332027]: Odom: quality=98, std dev=0.059582m|0.094762rad, update time=0.219927s
+[ INFO] [1628068249.129210162]: Odom: quality=163, std dev=0.047476m|0.088809rad, update time=0.210231s
+[ WARN] [1628068249.265018288]: Costmap2DROS transform timeout. Current time: 1628068249.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068249.423206505]: Odom: quality=130, std dev=0.041907m|0.094078rad, update time=0.284451s
+[ INFO] [1628068249.453605390]: Assembled 1 obstacle and 1 ground clouds (117434 points, 0.052744s)
+[ INFO] [1628068249.465077208]: rtabmap (33): Rate=1.00s, Limit=0.000s, Conversion=0.0035s, RTAB-Map=0.4480s, Maps update=0.0343s pub=0.0642s (local map=27, WM=27)
+[ INFO] [1628068249.682790500]: Odom: quality=123, std dev=0.044090m|0.082900rad, update time=0.255321s
+[ INFO] [1628068249.961720483]: Odom: quality=152, std dev=0.032973m|0.087975rad, update time=0.267742s
+[ INFO] [1628068250.243008244]: Odom: quality=132, std dev=0.034997m|0.087334rad, update time=0.271041s
+[ WARN] [1628068250.464991120]: Costmap2DROS transform timeout. Current time: 1628068250.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] [1628068250.535893067]: Failed to meet update rate! Took 0.0076195100000000003451
+[ INFO] [1628068250.565567620]: Odom: quality=91, std dev=0.027588m|0.089217rad, update time=0.309575s
+[ INFO] [1628068250.736878304]: Assembled 1 obstacle and 1 ground clouds (123686 points, 0.042071s)
+[ INFO] [1628068250.738828142]: I0804 17:10:50.000000 22128 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068250.739027802]: I0804 17:10:50.000000 22128 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068250.739130051]: I0804 17:10:50.000000 22128 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ INFO] [1628068250.745592278]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.4207s, Maps update=0.0243s pub=0.0508s (local map=28, WM=28)
+[ INFO] [1628068250.868854901]: Odom: quality=56, std dev=0.041527m|0.111046rad, update time=0.298583s
+[ WARN] (2021-08-04 17:10:51.119) OdometryF2M.cpp:529::computeTransform() Registration failed: "Not enough inliers 17/20 (matches=172) between -1 and 248" (guess=xyz=0.207162,0.107120,0.013685 rpy=-0.003286,0.008542,0.081313)
+[ WARN] (2021-08-04 17:10:51.119) OdometryF2M.cpp:290::computeTransform() Failed to find a transformation with the provided guess (xyz=0.207162,0.107120,0.013685 rpy=-0.003286,0.008542,0.081313), trying again without a guess.
+[ WARN] (2021-08-04 17:10:51.365) OdometryF2M.cpp:519::computeTransform() Trial with no guess still fail.
+[ WARN] (2021-08-04 17:10:51.365) OdometryF2M.cpp:529::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=104) between -1 and 248" (guess=xyz=0.207162,0.107120,0.013685 rpy=-0.003286,0.008542,0.081313)
+[ INFO] [1628068251.367698253]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.486709s
+[ WARN] [1628068251.465000216]: Costmap2DROS transform timeout. Current time: 1628068251.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:51.754) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=100) between -1 and 249"
+[ INFO] [1628068251.758214641]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.386989s
+[ERROR] (2021-08-04 17:10:51.762) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 729 is ignored!
+[ INFO] [1628068251.763124015]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0039s, RTAB-Map=0.0004s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:10:52.197) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=80) between -1 and 250"
+[ INFO] [1628068252.199494299]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.436211s
+[ INFO] [1628068252.331479112]: I0804 17:10:52.000000 22097 motion_filter.cc:42] Motion filter reduced the number of nodes to 47.4%.
+[ WARN] (2021-08-04 17:10:52.613) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=101) between -1 and 251"
+[ INFO] [1628068252.616328698]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.411303s
+[ WARN] [1628068252.665000277]: Costmap2DROS transform timeout. Current time: 1628068252.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:52.974) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=74) between -1 and 252"
+[ INFO] [1628068252.976123119]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.355574s
+[ERROR] (2021-08-04 17:10:52.979) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 748 is ignored!
+[ INFO] [1628068252.980030206]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:10:53.326) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=85) between -1 and 253"
+[ INFO] [1628068253.328271325]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.348127s
+[ INFO] [1628068253.420295170]: I0804 17:10:53.000000 22126 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068253.420413628]: I0804 17:10:53.000000 22126 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068253.420559056]: I0804 17:10:53.000000 22126 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[ WARN] (2021-08-04 17:10:53.690) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=83) between -1 and 254"
+[ INFO] [1628068253.692791715]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.361197s
+[ WARN] [1628068253.864986961]: Costmap2DROS transform timeout. Current time: 1628068253.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:54.042) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=81) between -1 and 255"
+[ INFO] [1628068254.044619182]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.341217s
+[ERROR] (2021-08-04 17:10:54.050) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 764 is ignored!
+[ INFO] [1628068254.050418923]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0051s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:10:54.404) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 256"
+[ INFO] [1628068254.406638740]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.355676s
+[ WARN] (2021-08-04 17:10:54.731) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=72) between -1 and 257"
+[ INFO] [1628068254.733664874]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.317621s
+[ WARN] (2021-08-04 17:10:55.041) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=81) between -1 and 258"
+[ INFO] [1628068255.043130089]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.306152s
+[ERROR] (2021-08-04 17:10:55.046) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 779 is ignored!
+[ INFO] [1628068255.046504998]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0028s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068255.065157117]: Costmap2DROS transform timeout. Current time: 1628068255.0650, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:55.384) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=67) between -1 and 259"
+[ INFO] [1628068255.386617270]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.334454s
+[ WARN] (2021-08-04 17:10:55.731) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=67) between -1 and 260"
+[ INFO] [1628068255.734881657]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.344886s
+[ WARN] (2021-08-04 17:10:56.115) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=64) between -1 and 261"
+[ INFO] [1628068256.119405459]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.380598s
+[ERROR] (2021-08-04 17:10:56.124) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 794 is ignored!
+[ INFO] [1628068256.124577533]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0037s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068256.264995661]: Costmap2DROS transform timeout. Current time: 1628068256.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:56.464) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=78) between -1 and 262"
+[ INFO] [1628068256.466839966]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.342792s
+[ WARN] (2021-08-04 17:10:56.826) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=90) between -1 and 263"
+[ INFO] [1628068256.828110540]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.355944s
+[ WARN] (2021-08-04 17:10:57.171) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=83) between -1 and 264"
+[ INFO] [1628068257.173713838]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.340596s
+[ERROR] (2021-08-04 17:10:57.177) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 810 is ignored!
+[ INFO] [1628068257.177907827]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0035s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068257.265020040]: Costmap2DROS transform timeout. Current time: 1628068257.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ INFO] [1628068257.445286450]: I0804 17:10:57.000000 22097 pose_graph_2d.cc:148] Inserted submap (0, 3).
+[ INFO] [1628068257.498381074]: I0804 17:10:57.000000 22129 constraint_builder_2d.cc:275] Node (0, 73) with 204 points on submap (0, 1) differs by translation 0.04 rotation 0.001 with score 67.1%.
+[ INFO] [1628068257.524201865]: I0804 17:10:57.000000 22127 constraint_builder_2d.cc:275] Node (0, 70) with 201 points on submap (0, 1) differs by translation 0.02 rotation 0.002 with score 66.3%.
+[ WARN] (2021-08-04 17:10:57.531) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=88) between -1 and 265"
+[ INFO] [1628068257.534295543]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.356431s
+[ INFO] [1628068257.536043928]: I0804 17:10:57.000000 22128 constraint_builder_2d.cc:275] Node (0, 76) with 212 points on submap (0, 1) differs by translation 0.03 rotation 0.000 with score 66.8%.
+[ INFO] [1628068257.582445072]: I0804 17:10:57.000000 22127 constraint_builder_2d.cc:275] Node (0, 86) with 203 points on submap (0, 1) differs by translation 0.01 rotation 0.000 with score 67.0%.
+[ WARN] (2021-08-04 17:10:57.938) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=85) between -1 and 266"
+[ INFO] [1628068257.942122293]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.388559s
+[ INFO] [1628068258.318229438]: I0804 17:10:58.000000 22097 collated_trajectory_builder.cc:81] scan rate: 13.86 Hz 7.21e-02 s +/- 2.68e-03 s (pulsed at 100.00% real time)
+[ WARN] (2021-08-04 17:10:58.324) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=88) between -1 and 267"
+[ INFO] [1628068258.326548063]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.375368s
+[ERROR] (2021-08-04 17:10:58.329) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 827 is ignored!
+[ INFO] [1628068258.329969666]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0027s, RTAB-Map=0.0001s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068258.464990177]: Costmap2DROS transform timeout. Current time: 1628068258.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:58.702) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=74) between -1 and 268"
+[ INFO] [1628068258.704828395]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.369625s
+[ WARN] (2021-08-04 17:10:59.073) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=76) between -1 and 269"
+[ INFO] [1628068259.076270955]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.367636s
+[ WARN] (2021-08-04 17:10:59.430) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=77) between -1 and 270"
+[ INFO] [1628068259.433786931]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.353501s
+[ERROR] (2021-08-04 17:10:59.438) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 843 is ignored!
+[ INFO] [1628068259.438421883]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0040s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068259.665002852]: Costmap2DROS transform timeout. Current time: 1628068259.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:10:59.807) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=80) between -1 and 271"
+[ INFO] [1628068259.809528766]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.368856s
+[ WARN] (2021-08-04 17:11:00.147) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=84) between -1 and 272"
+[ INFO] [1628068260.149957691]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.336661s
+[ WARN] (2021-08-04 17:11:00.487) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=71) between -1 and 273"
+[ INFO] [1628068260.489478194]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.335946s
+[ERROR] (2021-08-04 17:11:00.493) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 859 is ignored!
+[ INFO] [1628068260.493630612]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:00.838) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=97) between -1 and 274"
+[ INFO] [1628068260.841900981]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.347985s
+[ WARN] [1628068260.864977893]: Costmap2DROS transform timeout. Current time: 1628068260.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:01.213) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=86) between -1 and 275"
+[ INFO] [1628068261.215304325]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.366548s
+[ WARN] (2021-08-04 17:11:01.597) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=91) between -1 and 276"
+[ INFO] [1628068261.599646182]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.374290s
+[ERROR] (2021-08-04 17:11:01.604) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 875 is ignored!
+[ INFO] [1628068261.604835371]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0044s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:01.934) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=83) between -1 and 277"
+[ INFO] [1628068261.937001471]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.331314s
+[ WARN] [1628068262.064970048]: Costmap2DROS transform timeout. Current time: 1628068262.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:02.285) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 278"
+[ INFO] [1628068262.287325186]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.345014s
+[ WARN] (2021-08-04 17:11:02.673) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=77) between -1 and 279"
+[ INFO] [1628068262.676146774]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.383973s
+[ERROR] (2021-08-04 17:11:02.679) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 891 is ignored!
+[ INFO] [1628068262.680000424]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0032s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:03.043) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=78) between -1 and 280"
+[ INFO] [1628068263.045762155]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.365214s
+[ WARN] [1628068263.064966061]: Costmap2DROS transform timeout. Current time: 1628068263.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:03.405) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=62) between -1 and 281"
+[ INFO] [1628068263.409562299]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.360122s
+[ WARN] (2021-08-04 17:11:03.756) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=63) between -1 and 282"
+[ INFO] [1628068263.758834583]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.339630s
+[ERROR] (2021-08-04 17:11:03.761) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 908 is ignored!
+[ INFO] [1628068263.762080551]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0026s, RTAB-Map=0.0001s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068264.064973789]: Costmap2DROS transform timeout. Current time: 1628068264.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:04.170) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=80) between -1 and 283"
+[ INFO] [1628068264.172494214]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.406520s
+[ WARN] (2021-08-04 17:11:04.547) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=60) between -1 and 284"
+[ INFO] [1628068264.549839614]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.373786s
+[ WARN] (2021-08-04 17:11:04.863) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=68) between -1 and 285"
+[ INFO] [1628068264.865582078]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.312101s
+[ERROR] (2021-08-04 17:11:04.869) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 924 is ignored!
+[ INFO] [1628068264.869641719]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:05.206) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=72) between -1 and 286"
+[ INFO] [1628068265.208719991]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.338972s
+[ WARN] [1628068265.264975377]: Costmap2DROS transform timeout. Current time: 1628068265.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:05.551) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 287"
+[ INFO] [1628068265.553730610]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.335236s
+[ WARN] (2021-08-04 17:11:05.870) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=88) between -1 and 288"
+[ INFO] [1628068265.872654240]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.315758s
+[ERROR] (2021-08-04 17:11:05.876) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 939 is ignored!
+[ INFO] [1628068265.876232799]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0029s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:06.223) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=71) between -1 and 289"
+[ INFO] [1628068266.225849618]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.340964s
+[ WARN] [1628068266.464989839]: Costmap2DROS transform timeout. Current time: 1628068266.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:06.585) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=74) between -1 and 290"
+[ INFO] [1628068266.588039797]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.358913s
+[ WARN] (2021-08-04 17:11:06.932) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 291"
+[ INFO] [1628068266.934715144]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.336619s
+[ERROR] (2021-08-04 17:11:06.939) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 954 is ignored!
+[ INFO] [1628068266.939348943]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0040s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ INFO] [1628068266.952929619]: I0804 17:11:06.000000 22126 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068266.953059800]: I0804 17:11:06.000000 22126 constraint_builder_2d.cc:290] 27 computations resulted in 4 additional constraints.
+[ INFO] [1628068266.953179465]: I0804 17:11:06.000000 22126 constraint_builder_2d.cc:292] Score histogram:
+Count: 4  Min: 0.662692  Max: 0.670688  Mean: 0.667889
+[0.662692, 0.663492)	               #####	Count: 1 (25%)	Total: 1 (25%)
+[0.663492, 0.664292)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.664292, 0.665091)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665091, 0.665891)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665891, 0.666690)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.666690, 0.667490)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.667490, 0.668289)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.668289, 0.669089)	               #####	Count: 1 (25%)	Total: 2 (50%)
+[0.669089, 0.669889)	               #####	Count: 1 (25%)	Total: 3 (75%)
+[0.669889, 0.670688]	               #####	Count: 1 (25%)	Total: 4 (100%)
+[ WARN] (2021-08-04 17:11:07.302) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 292"
+[ INFO] [1628068267.304584931]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.365665s
+[ WARN] [1628068267.664972658]: Costmap2DROS transform timeout. Current time: 1628068267.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:07.674) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=83) between -1 and 293"
+[ INFO] [1628068267.676525507]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.362235s
+[ WARN] (2021-08-04 17:11:08.016) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=98) between -1 and 294"
+[ INFO] [1628068268.018313228]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.333523s
+[ERROR] (2021-08-04 17:11:08.021) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 971 is ignored!
+[ INFO] [1628068268.022059766]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0031s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:08.364) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=88) between -1 and 295"
+[ INFO] [1628068268.366230339]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.343888s
+[ WARN] (2021-08-04 17:11:08.713) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=85) between -1 and 296"
+[ INFO] [1628068268.715812565]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.345369s
+[ WARN] [1628068268.864967597]: Costmap2DROS transform timeout. Current time: 1628068268.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:09.050) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=103) between -1 and 297"
+[ INFO] [1628068269.052988902]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.333724s
+[ERROR] (2021-08-04 17:11:09.057) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 986 is ignored!
+[ INFO] [1628068269.057828128]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:09.443) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=87) between -1 and 298"
+[ INFO] [1628068269.446809789]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.389602s
+[ WARN] (2021-08-04 17:11:09.807) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=95) between -1 and 299"
+[ INFO] [1628068269.809269879]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.358841s
+[ WARN] [1628068269.864997899]: Costmap2DROS transform timeout. Current time: 1628068269.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:10.162) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=80) between -1 and 300"
+[ INFO] [1628068270.165209258]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.352636s
+[ERROR] (2021-08-04 17:11:10.171) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1002 is ignored!
+[ INFO] [1628068270.171605311]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0057s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:10.562) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=90) between -1 and 301"
+[ INFO] [1628068270.564840460]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.385916s
+[ WARN] (2021-08-04 17:11:10.924) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=100) between -1 and 302"
+[ INFO] [1628068270.927084943]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.348649s
+[ WARN] [1628068271.034690494]: Failed to meet update rate! Took 0.0097550080000000007757
+[ WARN] [1628068271.064985026]: Costmap2DROS transform timeout. Current time: 1628068271.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:11.282) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=87) between -1 and 303"
+[ INFO] [1628068271.284271914]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.353723s
+[ERROR] (2021-08-04 17:11:11.289) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1019 is ignored!
+[ INFO] [1628068271.289763135]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0046s, RTAB-Map=0.0003s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ INFO] [1628068271.329991374]: I0804 17:11:11.000000 22127 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068271.330139786]: I0804 17:11:11.000000 22127 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[ INFO] [1628068271.330300126]: I0804 17:11:11.000000 22127 constraint_builder_2d.cc:292] Score histogram:
+Count: 4  Min: 0.662692  Max: 0.670688  Mean: 0.667889
+[0.662692, 0.663492)	               #####	Count: 1 (25%)	Total: 1 (25%)
+[0.663492, 0.664292)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.664292, 0.665091)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665091, 0.665891)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665891, 0.666690)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.666690, 0.667490)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.667490, 0.668289)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.668289, 0.669089)	               #####	Count: 1 (25%)	Total: 2 (50%)
+[0.669089, 0.669889)	               #####	Count: 1 (25%)	Total: 3 (75%)
+[0.669889, 0.670688]	               #####	Count: 1 (25%)	Total: 4 (100%)
+[ WARN] (2021-08-04 17:11:11.653) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=88) between -1 and 304"
+[ INFO] [1628068271.656134090]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.366277s
+[ WARN] (2021-08-04 17:11:11.993) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=85) between -1 and 305"
+[ INFO] [1628068271.995820282]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.334843s
+[ WARN] [1628068272.265017843]: Costmap2DROS transform timeout. Current time: 1628068272.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:12.338) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=91) between -1 and 306"
+[ INFO] [1628068272.340902769]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.336905s
+[ERROR] (2021-08-04 17:11:12.348) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1035 is ignored!
+[ INFO] [1628068272.348620768]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0044s, RTAB-Map=0.0004s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:12.712) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=87) between -1 and 307"
+[ INFO] [1628068272.715711789]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.364328s
+[ WARN] (2021-08-04 17:11:13.123) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=81) between -1 and 308"
+[ INFO] [1628068273.126384746]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.407189s
+[ INFO] [1628068273.340247588]: I0804 17:11:13.000000 22097 collated_trajectory_builder.cc:81] scan rate: 14.04 Hz 7.12e-02 s +/- 3.00e-03 s (pulsed at 100.00% real time)
+[ WARN] [1628068273.465048721]: Costmap2DROS transform timeout. Current time: 1628068273.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:13.509) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=77) between -1 and 309"
+[ INFO] [1628068273.511464978]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.381055s
+[ERROR] (2021-08-04 17:11:13.515) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1051 is ignored!
+[ INFO] [1628068273.515768442]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0035s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:13.853) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=59) between -1 and 310"
+[ INFO] [1628068273.855857670]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.339776s
+[ INFO] [1628068274.154051285]: I0804 17:11:14.000000 22128 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[ INFO] [1628068274.226035250]: I0804 17:11:14.000000 22097 pose_graph_2d.cc:148] Inserted submap (0, 4).
+[ WARN] (2021-08-04 17:11:14.228) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=64) between -1 and 311"
+[ INFO] [1628068274.230111466]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.370778s
+[ INFO] [1628068274.502962712]: I0804 17:11:14.000000 22129 constraint_builder_2d.cc:290] 46 computations resulted in 0 additional constraints.
+[ INFO] [1628068274.503112586]: I0804 17:11:14.000000 22129 constraint_builder_2d.cc:292] Score histogram:
+Count: 4  Min: 0.662692  Max: 0.670688  Mean: 0.667889
+[0.662692, 0.663492)	               #####	Count: 1 (25%)	Total: 1 (25%)
+[0.663492, 0.664292)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.664292, 0.665091)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665091, 0.665891)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.665891, 0.666690)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.666690, 0.667490)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.667490, 0.668289)	                    	Count: 0 (0%)	Total: 1 (25%)
+[0.668289, 0.669089)	               #####	Count: 1 (25%)	Total: 2 (50%)
+[0.669089, 0.669889)	               #####	Count: 1 (25%)	Total: 3 (75%)
+[0.669889, 0.670688]	               #####	Count: 1 (25%)	Total: 4 (100%)
+[ INFO] [1628068274.569830625]: I0804 17:11:14.000000 22127 constraint_builder_2d.cc:275] Node (0, 361) with 206 points on submap (0, 2) differs by translation 0.01 rotation 0.002 with score 68.0%.
+[ INFO] [1628068274.572661431]: I0804 17:11:14.000000 22129 constraint_builder_2d.cc:275] Node (0, 364) with 213 points on submap (0, 2) differs by translation 0.01 rotation 0.005 with score 67.8%.
+[ WARN] [1628068274.665010750]: Costmap2DROS transform timeout. Current time: 1628068274.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:14.692) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=78) between -1 and 312"
+[ INFO] [1628068274.695358558]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.459765s
+[ERROR] (2021-08-04 17:11:14.701) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1067 is ignored!
+[ INFO] [1628068274.701585125]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0051s, RTAB-Map=0.0003s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068274.715693391]: Failed to meet update rate! Took 0.0074125890000000006774
+[ WARN] (2021-08-04 17:11:15.088) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=86) between -1 and 313"
+[ INFO] [1628068275.091066476]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.388395s
+[ WARN] (2021-08-04 17:11:15.451) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=79) between -1 and 314"
+[ INFO] [1628068275.454256340]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.358843s
+[ WARN] [1628068275.665026593]: Costmap2DROS transform timeout. Current time: 1628068275.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:15.797) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=69) between -1 and 315"
+[ INFO] [1628068275.799645919]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.341409s
+[ERROR] (2021-08-04 17:11:15.803) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1086 is ignored!
+[ INFO] [1628068275.803306458]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0031s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:16.137) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=58) between -1 and 316"
+[ INFO] [1628068276.139442174]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.335935s
+[ WARN] (2021-08-04 17:11:16.505) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=61) between -1 and 317"
+[ INFO] [1628068276.507607550]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.364467s
+[ WARN] (2021-08-04 17:11:16.835) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=47) between -1 and 318"
+[ INFO] [1628068276.837915601]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.327094s
+[ERROR] (2021-08-04 17:11:16.843) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1101 is ignored!
+[ INFO] [1628068276.843388715]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0048s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068276.864969086]: Costmap2DROS transform timeout. Current time: 1628068276.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:17.181) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=79) between -1 and 319"
+[ INFO] [1628068277.183440323]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.339746s
+[ WARN] (2021-08-04 17:11:17.519) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 320"
+[ INFO] [1628068277.521419479]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.333069s
+[ WARN] [1628068277.865001692]: Costmap2DROS transform timeout. Current time: 1628068277.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:17.868) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=66) between -1 and 321"
+[ INFO] [1628068277.870687633]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.346004s
+[ERROR] (2021-08-04 17:11:17.874) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1116 is ignored!
+[ INFO] [1628068277.874660078]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:18.207) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=55) between -1 and 322"
+[ INFO] [1628068278.210325422]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.331391s
+[ WARN] (2021-08-04 17:11:18.541) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=52) between -1 and 323"
+[ INFO] [1628068278.543285931]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.320444s
+[ WARN] (2021-08-04 17:11:18.889) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=64) between -1 and 324"
+[ INFO] [1628068278.892295251]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.337515s
+[ERROR] (2021-08-04 17:11:18.896) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1131 is ignored!
+[ INFO] [1628068278.896343166]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] [1628068279.064987908]: Costmap2DROS transform timeout. Current time: 1628068279.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:19.210) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=61) between -1 and 325"
+[ INFO] [1628068279.212276290]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.315875s
+[ WARN] (2021-08-04 17:11:19.554) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=58) between -1 and 326"
+[ INFO] [1628068279.556110322]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.332853s
+[ WARN] (2021-08-04 17:11:19.891) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=60) between -1 and 327"
+[ INFO] [1628068279.893384897]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.333619s
+[ERROR] (2021-08-04 17:11:19.897) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1146 is ignored!
+[ INFO] [1628068279.897532042]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0034s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:20.233) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=60) between -1 and 328"
+[ INFO] [1628068280.235683779]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.331240s
+[ WARN] [1628068280.264999452]: Costmap2DROS transform timeout. Current time: 1628068280.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:20.587) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=64) between -1 and 329"
+[ INFO] [1628068280.589769263]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.347840s
+[ WARN] (2021-08-04 17:11:20.956) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=62) between -1 and 330"
+[ INFO] [1628068280.958014706]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.364820s
+[ERROR] (2021-08-04 17:11:20.961) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1162 is ignored!
+[ INFO] [1628068280.961939591]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:21.279) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=61) between -1 and 331"
+[ INFO] [1628068281.282857813]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.320844s
+[ WARN] [1628068281.465007761]: Costmap2DROS transform timeout. Current time: 1628068281.4649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:21.682) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=60) between -1 and 332"
+[ INFO] [1628068281.684662792]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.398325s
+[ WARN] (2021-08-04 17:11:22.048) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=69) between -1 and 333"
+[ INFO] [1628068282.051049013]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.362817s
+[ERROR] (2021-08-04 17:11:22.054) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1178 is ignored!
+[ INFO] [1628068282.054623083]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0030s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:22.419) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=53) between -1 and 334"
+[ INFO] [1628068282.421856589]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.366741s
+[ WARN] [1628068282.664965984]: Costmap2DROS transform timeout. Current time: 1628068282.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:22.774) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=60) between -1 and 335"
+[ INFO] [1628068282.776754386]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.350104s
+[ WARN] (2021-08-04 17:11:23.095) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=62) between -1 and 336"
+[ INFO] [1628068283.097046353]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.315387s
+[ERROR] (2021-08-04 17:11:23.100) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1194 is ignored!
+[ INFO] [1628068283.101048730]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:23.483) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=75) between -1 and 337"
+[ INFO] [1628068283.486394200]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.385065s
+[ WARN] [1628068283.665014020]: Costmap2DROS transform timeout. Current time: 1628068283.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:23.836) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=65) between -1 and 338"
+[ INFO] [1628068283.838475047]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.342354s
+[ WARN] (2021-08-04 17:11:24.199) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=65) between -1 and 339"
+[ INFO] [1628068284.201715738]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.351224s
+[ERROR] (2021-08-04 17:11:24.207) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1210 is ignored!
+[ INFO] [1628068284.207618950]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0052s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:24.565) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=67) between -1 and 340"
+[ INFO] [1628068284.569282257]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.360963s
+[ WARN] [1628068284.665179402]: Costmap2DROS transform timeout. Current time: 1628068284.6649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:24.917) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=62) between -1 and 341"
+[ INFO] [1628068284.919900206]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.342382s
+[ WARN] (2021-08-04 17:11:25.290) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=53) between -1 and 342"
+[ INFO] [1628068285.293216534]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.362083s
+[ERROR] (2021-08-04 17:11:25.296) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1226 is ignored!
+[ INFO] [1628068285.296970282]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0031s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:25.654) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=58) between -1 and 343"
+[ INFO] [1628068285.657362519]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.359975s
+[ WARN] [1628068285.715567704]: Failed to meet update rate! Took 0.0072810100000000000861
+[ WARN] [1628068285.864979311]: Costmap2DROS transform timeout. Current time: 1628068285.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:26.002) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=49) between -1 and 344"
+[ INFO] [1628068286.005102013]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.344106s
+[ WARN] (2021-08-04 17:11:26.363) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=65) between -1 and 345"
+[ INFO] [1628068286.366124539]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.357474s
+[ERROR] (2021-08-04 17:11:26.369) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1242 is ignored!
+[ INFO] [1628068286.369830300]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0030s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:26.743) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=50) between -1 and 346"
+[ INFO] [1628068286.745368722]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.367621s
+[ WARN] [1628068286.865008086]: Costmap2DROS transform timeout. Current time: 1628068286.8649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:27.100) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=63) between -1 and 347"
+[ INFO] [1628068287.102542088]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.353995s
+[ WARN] (2021-08-04 17:11:27.448) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=66) between -1 and 348"
+[ INFO] [1628068287.451350075]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.339100s
+[ERROR] (2021-08-04 17:11:27.455) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1258 is ignored!
+[ INFO] [1628068287.455321292]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0033s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ INFO] [1628068287.668249175]: I0804 17:11:27.000000 22097 motion_filter.cc:42] Motion filter reduced the number of nodes to 38.9%.
+[ WARN] (2021-08-04 17:11:27.814) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=76) between -1 and 349"
+[ INFO] [1628068287.817146829]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.361328s
+[ WARN] [1628068288.064966634]: Costmap2DROS transform timeout. Current time: 1628068288.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:28.201) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=72) between -1 and 350"
+[ INFO] [1628068288.204140212]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.377287s
+[ INFO] [1628068288.349828278]: I0804 17:11:28.000000 22097 collated_trajectory_builder.cc:81] scan rate: 14.26 Hz 7.01e-02 s +/- 3.03e-03 s (pulsed at 99.99% real time)
+[ WARN] (2021-08-04 17:11:28.543) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=70) between -1 and 351"
+[ INFO] [1628068288.545990553]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.337891s
+[ERROR] (2021-08-04 17:11:28.550) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1274 is ignored!
+[ INFO] [1628068288.551122222]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.0004s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:28.891) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=59) between -1 and 352"
+[ INFO] [1628068288.893920207]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.343410s
+[ WARN] [1628068289.065009178]: Costmap2DROS transform timeout. Current time: 1628068289.0649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:29.252) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=54) between -1 and 353"
+[ INFO] [1628068289.254979753]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.357400s
+[ WARN] (2021-08-04 17:11:29.584) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=51) between -1 and 354"
+[ INFO] [1628068289.585871573]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.327427s
+[ERROR] (2021-08-04 17:11:29.589) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1290 is ignored!
+[ INFO] [1628068289.589368956]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0029s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:29.917) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=62) between -1 and 355"
+[ INFO] [1628068289.919554168]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.328849s
+[ WARN] (2021-08-04 17:11:30.245) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=65) between -1 and 356"
+[ INFO] [1628068290.249351020]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.326514s
+[ WARN] [1628068290.264989972]: Costmap2DROS transform timeout. Current time: 1628068290.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:30.581) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=68) between -1 and 357"
+[ INFO] [1628068290.583296516]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.330009s
+[ERROR] (2021-08-04 17:11:30.588) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1305 is ignored!
+[ INFO] [1628068290.588170975]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:30.907) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=54) between -1 and 358"
+[ INFO] [1628068290.909884092]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.319961s
+[ WARN] [1628068291.265047189]: Costmap2DROS transform timeout. Current time: 1628068291.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:31.284) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=56) between -1 and 359"
+[ INFO] [1628068291.286390032]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.372005s
+[ WARN] (2021-08-04 17:11:31.647) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=73) between -1 and 360"
+[ INFO] [1628068291.649883598]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.353679s
+[ERROR] (2021-08-04 17:11:31.655) Rtabmap.cpp:1155::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1320 is ignored!
+[ INFO] [1628068291.655231154]: rtabmap (34): Rate=1.00s, Limit=0.000s, Conversion=0.0041s, RTAB-Map=0.0002s, Maps update=0.0000s pub=0.0000s (local map=28, WM=28)
+[ WARN] (2021-08-04 17:11:31.981) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=67) between -1 and 361"
+[ INFO] [1628068291.984396325]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.328637s
+[ WARN] [1628068292.265050662]: Costmap2DROS transform timeout. Current time: 1628068292.2649, global_pose stamp: 0.0000, tolerance: 0.5000
+[ WARN] (2021-08-04 17:11:32.341) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=61) between -1 and 362"
+[ INFO] [1628068292.343217792]: Odom: quality=0, std dev=0.000000m|0.000000rad, update time=0.353845s
+^C[move_base-17] killing on exit
+[robot_state_publisher-16] killing on exit
+[obstacles_detection-15] killing on exit
+[voxel_grid-14] killing on exit
+[pcl_manager-13] killing on exit
+[ukf_se-12] killing on exit
+[points_xyzrgb-11] killing on exit
+[rviz-10] killing on exit
+[ INFO] [1628068292.541905671]: Unloading nodelet /obstacles_detection from manager pcl_manager
+[rtabmap/rtabmap-9] killing on exit
+[rtabmap/rgbd_odometry-8] killing on exit
+[ INFO] [1628068292.546058973]: Unloading nodelet /voxel_grid from manager pcl_manager
+[ WARN] (2021-08-04 17:11:32.749) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=72) between -1 and 363"
+[camera/realsense2_camera-6] killing on exit
+[camera/realsense2_camera_manager-5] killing on exit
+[cartographer_occupancy_grid_node-4] killing on exit
+[cartographer_node-3] killing on exit
+[rplidarNode-2] killing on exit
+[ WARN] (2021-08-04 17:11:33.517) OdometryF2M.cpp:525::computeTransform() Registration failed: "Not enough inliers 0/20 (matches=61) between -1 and 364"
+Optimizing: Done.     
+Optimizing: Done.     
+rtabmap: Saving database/long-term memory... (located at /home/a/.ros/rtabmap.db)
+rtabmap: 2D occupancy grid map saved.
+rtabmap: Saving database/long-term memory...done! (located at /home/a/.ros/rtabmap.db, 31 MB)
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+done
